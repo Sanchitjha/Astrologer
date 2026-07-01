@@ -5,14 +5,14 @@ export default function AboutTeaser() {
   return (
     <section
       className="py-20 px-4 border-t border-[#D4AF37]/8"
-      style={{ background: 'radial-gradient(ellipse at 0% 50%, #1A0000 0%, #050005 60%)' }}
+      style={{ background: 'radial-gradient(ellipse at 0% 50%, #2C0C16 0%, #0D0714 60%)' }}
     >
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
         {/* Image */}
         <div className="flex justify-center order-last lg:order-first">
           <div className="relative">
             <div className="absolute -inset-5 rounded-full border border-dashed border-[#D4AF37]/20 spin-slow" aria-hidden="true" />
-            <div className="w-52 h-52 md:w-64 md:h-64 rounded-full ring-4 ring-[#D4AF37]/25 overflow-hidden bg-[#0D0005] p-4 shadow-[0_0_60px_rgba(212,175,55,0.1)]">
+            <div className="w-52 h-52 md:w-64 md:h-64 rounded-full ring-4 ring-[#D4AF37]/25 overflow-hidden bg-[#180B22] p-4 shadow-[0_0_60px_rgba(212,175,55,0.1)]">
               <Image
                 src="/logo.jpg"
                 alt="Rohit Sharmaji — Jyotish Shreenath Ji"

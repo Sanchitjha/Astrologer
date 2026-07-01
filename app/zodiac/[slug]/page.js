@@ -214,16 +214,16 @@ export default async function ZodiacSignPage({ params }) {
   return (
     <>
       <PageHeader
-        title={`${z.symbol} ${z.name} — ${z.hindi}`}
+        title={`${z.symbol} ${z.name}`}
+        titleHindi={z.hindi}
         subtitle={`${z.element} Sign · Ruled by ${z.ruler}`}
-        breadcrumb={[
-          { label: 'Home', href: '/' },
+        crumbs={[
           { label: 'Zodiac', href: '/#zodiac' },
           { label: z.name },
         ]}
       />
 
-      <section className="py-20 px-4" style={{ background: '#050005' }}>
+      <section className="py-20 px-4" style={{ background: '#0D0714' }}>
         <div className="max-w-5xl mx-auto space-y-8">
 
           {/* Main symbol + info */}
@@ -246,7 +246,7 @@ export default async function ZodiacSignPage({ params }) {
                   ['Lucky Stone', z.stone],
                 ].map(([k, v]) => (
                   <div key={k} className="flex justify-between gap-2">
-                    <span className="text-white/40">{k}</span>
+                    <span className="text-white/58">{k}</span>
                     <span className="text-[#D4AF37]/80 font-medium text-right">{v}</span>
                   </div>
                 ))}

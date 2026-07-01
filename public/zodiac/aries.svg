@@ -1,6 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <path d="M32 8c-6 0-10 6-10 14s4 14 10 14" stroke="#FF6B6B" stroke-width="3" stroke-linecap="round" fill="none"/>
-  <path d="M32 8c6 0 10 6 10 14s-4 14-10 14" stroke="#FF6B6B" stroke-width="3" stroke-linecap="round" fill="none"/>
-  <line x1="22" y1="36" x2="22" y2="56" stroke="#FF6B6B" stroke-width="3" stroke-linecap="round"/>
-  <line x1="42" y1="36" x2="42" y2="56" stroke="#FF6B6B" stroke-width="3" stroke-linecap="round"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>Aries</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Aries" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M7,2 C4.239,2 2,4.239 2,7 L4,7 C4,5.343 5.343,4 7,4 C8.657,4 10,5.343 10,7 L12,7 C12,4.239 9.761,2 7,2" id="Horn" fill="#FF6B6B"></path>
+        <path d="M17,2 C14.239,2 12,4.239 12,7 L14,7 C14,5.343 15.343,4 17,4 C18.657,4 20,5.343 20,7 L22,7 C22,4.239 19.761,2 17,2" id="Horn" fill="#FF6B6B"></path>
+        <polygon id="Head" fill="#FF6B6B" points="13 22 11 22 10 9 14 9"></polygon>
+    </g>
 </svg>

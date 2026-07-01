@@ -58,11 +58,12 @@ export default function LoveProblemsPage() {
     <>
       <PageHeader
         title="Love Problem Solutions"
-        subtitle="Resolve relationship challenges with authentic Vedic Astrology guidance"
-        breadcrumb={[{ label: 'Home', href: '/' }, { label: 'Love Problems' }]}
+        titleHindi="प्रेम समस्या समाधान"
+        subtitle="Love & Relationship"
+        crumbs={[{ label: 'Love Problems' }]}
       />
 
-      <section className="py-20 px-4" style={{ background: '#050005' }}>
+      <section className="py-20 px-4" style={{ background: '#0D0714' }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <p className="section-label mb-3">Expert Guidance</p>

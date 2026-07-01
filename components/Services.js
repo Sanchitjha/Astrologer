@@ -15,7 +15,7 @@ export default function Services({ preview = false }) {
   return (
     <section
       className="py-20 px-4 border-t border-[#D4AF37]/8"
-      style={{ background: 'radial-gradient(ellipse at 50% 100%, #0D0005 0%, #050005 70%)' }}
+      style={{ background: 'radial-gradient(ellipse at 50% 100%, #180B22 0%, #0D0714 70%)' }}
     >
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
@@ -39,7 +39,7 @@ export default function Services({ preview = false }) {
                     style={{ fontFamily: 'var(--font-cinzel)' }}>
                   {s.label}
                 </h3>
-                <p className="text-white/35 text-xs" style={{ fontFamily: 'var(--font-devanagari)' }}>
+                <p className="text-white/52 text-xs" style={{ fontFamily: 'var(--font-devanagari)' }}>
                   {s.labelHindi}
                 </p>
               </div>

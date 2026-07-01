@@ -39,7 +39,7 @@ export default function ContactPage() {
         crumbs={[{ label: 'Contact' }]}
       />
 
-      <main className="bg-[#050005] py-16 px-4">
+      <main className="bg-[#0D0714] py-16 px-4">
         <div className="max-w-5xl mx-auto space-y-12">
 
           {/* Info cards */}
@@ -52,7 +52,7 @@ export default function ContactPage() {
                 <div>
                   <p className="text-[#D4AF37]/70 text-xs mb-1 section-label">{label}</p>
                   <p className="text-white font-semibold text-sm">{value}</p>
-                  <p className="text-white/40 text-xs mt-0.5">{sub}</p>
+                  <p className="text-white/58 text-xs mt-0.5">{sub}</p>
                 </div>
               </div>
             ))}
@@ -79,7 +79,7 @@ export default function ContactPage() {
                   <p className="text-white/50 text-xs mb-1 section-label">Call Us</p>
                   <p className="text-[#FFD700] text-2xl font-black tracking-wide"
                      style={{ fontFamily: 'var(--font-cinzel)' }}>76000 10811</p>
-                  <p className="text-white/35 text-xs mt-1">Rohit Sharmaji — Direct Line</p>
+                  <p className="text-white/52 text-xs mt-1">Rohit Sharmaji — Direct Line</p>
                 </div>
                 <span className="btn-gold !py-2 !px-8" style={{ fontFamily: 'var(--font-cinzel)' }}>
                   Call Now
@@ -100,7 +100,7 @@ export default function ContactPage() {
                   <p className="text-white/50 text-xs mb-1 section-label">WhatsApp</p>
                   <p className="text-green-400 text-2xl font-black tracking-wide"
                      style={{ fontFamily: 'var(--font-cinzel)' }}>76000 10811</p>
-                  <p className="text-white/35 text-xs mt-1">Chat anytime</p>
+                  <p className="text-white/52 text-xs mt-1">Chat anytime</p>
                 </div>
                 <span
                   className="inline-flex items-center justify-center gap-2 font-bold py-2 px-8 rounded-full text-white text-sm transition-all hover:scale-105"
@@ -113,7 +113,7 @@ export default function ContactPage() {
           </div>
 
           {/* Note */}
-          <p className="text-center text-white/25 text-xs">
+          <p className="text-center text-white/42 text-xs">
             All consultations are confidential. For Kundali reading please keep your birth date, time, and place ready.
           </p>
         </div>

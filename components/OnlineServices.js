@@ -43,7 +43,7 @@ export default function OnlineServices() {
   return (
     <section
       className="py-20 px-4 border-t border-[#D4AF37]/8"
-      style={{ background: 'radial-gradient(ellipse at 50% 100%, #0D0005 0%, #050005 70%)' }}
+      style={{ background: 'radial-gradient(ellipse at 50% 100%, #180B22 0%, #0D0714 70%)' }}
       aria-labelledby="services-heading"
     >
       <div className="max-w-6xl mx-auto">
@@ -83,7 +83,7 @@ export default function OnlineServices() {
                     style={{ fontFamily: 'var(--font-cinzel)' }}>
                   {s.title}
                 </h3>
-                <p className="text-white/30 text-xs mt-0.5"
+                <p className="text-white/48 text-xs mt-0.5"
                    style={{ fontFamily: 'var(--font-devanagari)' }}>
                   {s.titleHindi}
                 </p>

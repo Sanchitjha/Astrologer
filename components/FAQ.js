@@ -51,7 +51,7 @@ export default function FAQ() {
   return (
     <section
       className="py-20 px-4 border-t border-[#D4AF37]/8"
-      style={{ background: 'linear-gradient(180deg, #050005 0%, #0A0005 100%)' }}
+      style={{ background: 'linear-gradient(180deg, #0D0714 0%, #160A1C 100%)' }}
       aria-labelledby="faq-heading"
     >
       <div className="max-w-4xl mx-auto">

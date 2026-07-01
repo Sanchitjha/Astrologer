@@ -9,7 +9,7 @@ export default function VideoTestimonials() {
   return (
     <section
       className="py-20 px-4 border-t border-[#D4AF37]/8"
-      style={{ background: 'linear-gradient(180deg, #050005 0%, #0A0010 100%)' }}
+      style={{ background: 'linear-gradient(180deg, #0D0714 0%, #180B22 100%)' }}
       aria-labelledby="ss-heading"
     >
       <div className="max-w-6xl mx-auto">
@@ -44,7 +44,7 @@ export default function VideoTestimonials() {
                 </div>
                 <span className="mt-6 text-5xl opacity-30">{v.icon}</span>
                 <div className="absolute inset-x-0 bottom-0 h-1/2
-                                bg-gradient-to-t from-[#050005] to-transparent" />
+                                bg-gradient-to-t from-[#0D0714] to-transparent" />
               </div>
               <div className="p-4">
                 <p className="text-white font-semibold text-sm text-center"
@@ -56,7 +56,7 @@ export default function VideoTestimonials() {
           ))}
         </div>
 
-        <p className="text-center text-white/25 text-xs mt-8 italic">
+        <p className="text-center text-white/42 text-xs mt-8 italic">
           Video testimonials will be embedded here — YouTube, Instagram Reel, or MP4.
         </p>
       </div>

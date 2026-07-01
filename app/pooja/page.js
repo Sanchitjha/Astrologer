@@ -77,11 +77,12 @@ export default function PoojaPage() {
     <>
       <PageHeader
         title="Pooja & Rituals"
-        subtitle="Authentic Vedic rituals conducted by expert pandits for every life occasion"
-        breadcrumb={[{ label: 'Home', href: '/' }, { label: 'Pooja' }]}
+        titleHindi="पूजा एवं अनुष्ठान"
+        subtitle="Sacred Rituals"
+        crumbs={[{ label: 'Pooja' }]}
       />
 
-      <section className="py-20 px-4" style={{ background: '#050005' }}>
+      <section className="py-20 px-4" style={{ background: '#0D0714' }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <p className="section-label mb-3">Sacred Rituals</p>
@@ -126,12 +127,14 @@ export default function PoojaPage() {
               a complete list of required samagri (materials) and guide you through the process.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <a href="tel:+919876543210"
+              <a href="tel:7600010811"
                  className="btn-gold rounded-full px-8 py-3 text-sm"
                  style={{ fontFamily: 'var(--font-cinzel)' }}>
                 📞 Call to Book
               </a>
-              <a href="https://wa.me/919876543210"
+              <a href="https://wa.me/917600010811?text=Namaste%20Rohit%20Sharmaji%2C%20I%20would%20like%20to%20book%20a%20Pooja."
+                 target="_blank"
+                 rel="noopener noreferrer"
                  className="btn-outline-gold rounded-full px-8 py-3 text-sm"
                  style={{ fontFamily: 'var(--font-cinzel)' }}>
                 💬 WhatsApp Us

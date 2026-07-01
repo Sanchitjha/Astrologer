@@ -78,7 +78,7 @@ export default function ContactForm() {
       >
         Book Your Consultation
       </h3>
-      <p className="text-white/40 text-xs text-center">
+      <p className="text-white/58 text-xs text-center">
         Fill out the form below and we will connect with you shortly.
       </p>
 
@@ -95,7 +95,7 @@ export default function ContactForm() {
             value={form.name}
             onChange={handleChange}
             placeholder="Your full name"
-            className="w-full bg-white/5 border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/25 focus:border-[#D4AF37]/60 focus:outline-none focus:ring-1 focus:ring-[#D4AF37]/30 transition-colors"
+            className="w-full bg-white/5 border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/42 focus:border-[#D4AF37]/60 focus:outline-none focus:ring-1 focus:ring-[#D4AF37]/30 transition-colors"
           />
         </div>
 
@@ -111,7 +111,7 @@ export default function ContactForm() {
             value={form.phone}
             onChange={handleChange}
             placeholder="Your phone number"
-            className="w-full bg-white/5 border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/25 focus:border-[#D4AF37]/60 focus:outline-none focus:ring-1 focus:ring-[#D4AF37]/30 transition-colors"
+            className="w-full bg-white/5 border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/42 focus:border-[#D4AF37]/60 focus:outline-none focus:ring-1 focus:ring-[#D4AF37]/30 transition-colors"
           />
         </div>
       </div>
@@ -127,7 +127,7 @@ export default function ContactForm() {
           value={form.email}
           onChange={handleChange}
           placeholder="Your email address"
-          className="w-full bg-white/5 border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/25 focus:border-[#D4AF37]/60 focus:outline-none focus:ring-1 focus:ring-[#D4AF37]/30 transition-colors"
+          className="w-full bg-white/5 border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/42 focus:border-[#D4AF37]/60 focus:outline-none focus:ring-1 focus:ring-[#D4AF37]/30 transition-colors"
         />
       </div>
 
@@ -142,7 +142,7 @@ export default function ContactForm() {
             type="date"
             value={form.dob}
             onChange={handleChange}
-            className="w-full bg-white/5 border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/25 focus:border-[#D4AF37]/60 focus:outline-none focus:ring-1 focus:ring-[#D4AF37]/30 transition-colors [color-scheme:dark]"
+            className="w-full bg-white/5 border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/42 focus:border-[#D4AF37]/60 focus:outline-none focus:ring-1 focus:ring-[#D4AF37]/30 transition-colors [color-scheme:dark]"
           />
         </div>
 
@@ -156,7 +156,7 @@ export default function ContactForm() {
             type="time"
             value={form.tob}
             onChange={handleChange}
-            className="w-full bg-white/5 border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/25 focus:border-[#D4AF37]/60 focus:outline-none focus:ring-1 focus:ring-[#D4AF37]/30 transition-colors [color-scheme:dark]"
+            className="w-full bg-white/5 border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/42 focus:border-[#D4AF37]/60 focus:outline-none focus:ring-1 focus:ring-[#D4AF37]/30 transition-colors [color-scheme:dark]"
           />
         </div>
 
@@ -171,7 +171,7 @@ export default function ContactForm() {
             value={form.pob}
             onChange={handleChange}
             placeholder="City, State"
-            className="w-full bg-white/5 border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/25 focus:border-[#D4AF37]/60 focus:outline-none focus:ring-1 focus:ring-[#D4AF37]/30 transition-colors"
+            className="w-full bg-white/5 border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/42 focus:border-[#D4AF37]/60 focus:outline-none focus:ring-1 focus:ring-[#D4AF37]/30 transition-colors"
           />
         </div>
       </div>
@@ -188,7 +188,7 @@ export default function ContactForm() {
           value={form.message}
           onChange={handleChange}
           placeholder="Describe your concern or question..."
-          className="w-full bg-white/5 border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/25 focus:border-[#D4AF37]/60 focus:outline-none focus:ring-1 focus:ring-[#D4AF37]/30 transition-colors resize-none"
+          className="w-full bg-white/5 border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/42 focus:border-[#D4AF37]/60 focus:outline-none focus:ring-1 focus:ring-[#D4AF37]/30 transition-colors resize-none"
         />
       </div>
 
@@ -201,7 +201,7 @@ export default function ContactForm() {
         {sending ? 'Sending...' : '📩 Submit Consultation Request'}
       </button>
 
-      <p className="text-white/25 text-[11px] text-center">
+      <p className="text-white/42 text-[11px] text-center">
         Your information is kept completely confidential. For Kundali reading, please provide accurate birth details.
       </p>
     </form>

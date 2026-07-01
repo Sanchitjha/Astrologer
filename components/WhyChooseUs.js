@@ -4,7 +4,7 @@ export default function WhyChooseUs() {
   return (
     <section
       className="py-20 px-4 border-t border-[#D4AF37]/8"
-      style={{ background: 'radial-gradient(ellipse at 0% 50%, #1A0000 0%, #050005 60%)' }}
+      style={{ background: 'radial-gradient(ellipse at 0% 50%, #2C0C16 0%, #0D0714 60%)' }}
       aria-labelledby="wcu-heading"
     >
       <div className="max-w-6xl mx-auto">
@@ -71,7 +71,7 @@ export default function WhyChooseUs() {
                   <div key={l} className="text-center">
                     <p className="text-[#D4AF37] font-black text-xl"
                        style={{ fontFamily: 'var(--font-cinzel)' }}>{v}</p>
-                    <p className="text-white/40 text-xs">{l}</p>
+                    <p className="text-white/58 text-xs">{l}</p>
                   </div>
                 ))}
               </div>

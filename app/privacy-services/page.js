@@ -46,11 +46,12 @@ export default function PrivacyServicesPage() {
     <>
       <PageHeader
         title="Privacy Services"
-        subtitle="Your consultations are 100% private, secure, and confidential"
-        breadcrumb={[{ label: 'Home', href: '/' }, { label: 'Privacy Services' }]}
+        titleHindi="गोपनीयता सेवाएँ"
+        subtitle="Confidential & Secure"
+        crumbs={[{ label: 'Privacy Services' }]}
       />
 
-      <section className="py-20 px-4" style={{ background: '#050005' }}>
+      <section className="py-20 px-4" style={{ background: '#0D0714' }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <p className="section-label mb-3">Our Commitment</p>

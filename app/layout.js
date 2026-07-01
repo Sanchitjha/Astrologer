@@ -1,26 +1,30 @@
-import { Cinzel, Noto_Serif, Noto_Sans_Devanagari } from 'next/font/google';
+import localFont from 'next/font/local';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 
-const cinzel = Cinzel({
-  subsets: ['latin'],
-  weight: ['400', '600', '700', '900'],
+// Self-hosted variable fonts — no network dependency, so pages always load fast & offline.
+const cinzel = localFont({
+  src: './fonts/Cinzel.woff2',
+  weight: '400 900',
+  style: 'normal',
   variable: '--font-cinzel',
   display: 'swap',
 });
 
-const notoSerif = Noto_Serif({
-  subsets: ['latin'],
-  weight: ['400', '700'],
+const notoSerif = localFont({
+  src: './fonts/NotoSerif.woff2',
+  weight: '400 700',
+  style: 'normal',
   variable: '--font-serif',
   display: 'swap',
 });
 
-const notoDevanagari = Noto_Sans_Devanagari({
-  subsets: ['devanagari'],
-  weight: ['400', '600', '700'],
+const notoDevanagari = localFont({
+  src: './fonts/NotoDevanagari.woff2',
+  weight: '400 700',
+  style: 'normal',
   variable: '--font-devanagari',
   display: 'swap',
 });

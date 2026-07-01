@@ -16,7 +16,7 @@ export default function About() {
         {/* Section heading */}
         <div className="text-center mb-14">
           <p className="text-[#CC0000] text-sm font-semibold tracking-widest uppercase mb-2">Our Astrologer</p>
-          <h2 className="text-[#1A0000] text-4xl md:text-5xl font-bold">
+          <h2 className="text-[#2C0C16] text-4xl md:text-5xl font-bold">
             हमारे बारे में
           </h2>
           <p className="text-[#800000] text-xl mt-1">About Jyotish Shreenath Ji</p>
@@ -50,15 +50,15 @@ export default function About() {
             <div className="inline-block bg-[#CC0000] text-white text-xs font-bold px-4 py-1.5 rounded-full tracking-wide uppercase">
               20+ Years of Experience
             </div>
-            <h3 className="text-[#1A0000] text-2xl md:text-3xl font-bold leading-snug">
+            <h3 className="text-[#2C0C16] text-2xl md:text-3xl font-bold leading-snug">
               Rohit Sharmaji — Expert in Vedic Astrology
             </h3>
-            <p className="text-[#1A0000]/70 text-base leading-relaxed">
+            <p className="text-[#2C0C16]/70 text-base leading-relaxed">
               With over two decades of dedicated practice in Vedic Jyotish, Rohit Sharmaji has guided
               thousands of families towards prosperity, peace, and purpose. His expertise spans Kundali
               analysis, Yantra remedies, Vastu consultation, and planetary gemstone advice.
             </p>
-            <p className="text-[#1A0000]/70 text-base leading-relaxed">
+            <p className="text-[#2C0C16]/70 text-base leading-relaxed">
               Rooted in the ancient Vaishnav tradition, every reading is conducted with deep devotion
               and precision — providing practical solutions aligned with the cosmic energies at play
               in your life.
@@ -74,7 +74,7 @@ export default function About() {
 
         {/* Services Grid */}
         <div className="mt-20">
-          <h3 className="text-center text-[#1A0000] text-2xl font-bold mb-8">Our Services</h3>
+          <h3 className="text-center text-[#2C0C16] text-2xl font-bold mb-8">Our Services</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
             {services.map((s) => (
               <div
@@ -82,8 +82,8 @@ export default function About() {
                 className="bg-white border border-[#FFD700]/30 rounded-xl p-5 shadow-sm hover:shadow-md hover:border-[#FFD700] transition-all text-center"
               >
                 <div className="text-3xl mb-2">{s.icon}</div>
-                <p className="text-[#1A0000] font-semibold text-sm">{s.label}</p>
-                <p className="text-[#1A0000]/50 text-xs mt-1">{s.desc}</p>
+                <p className="text-[#2C0C16] font-semibold text-sm">{s.label}</p>
+                <p className="text-[#2C0C16]/50 text-xs mt-1">{s.desc}</p>
               </div>
             ))}
           </div>

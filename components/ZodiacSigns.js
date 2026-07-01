@@ -18,8 +18,9 @@ const zodiacs = [
 export default function ZodiacSigns() {
   return (
     <section
-      className="py-20 px-4 border-t border-[#D4AF37]/8"
-      style={{ background: 'radial-gradient(ellipse at 50% 50%, #0D0005 0%, #050005 80%)' }}
+      id="zodiac"
+      className="py-20 px-4 border-t border-[#D4AF37]/8 scroll-mt-24"
+      style={{ background: 'radial-gradient(ellipse at 50% 50%, #180B22 0%, #0D0714 80%)' }}
       aria-labelledby="zodiac-heading"
     >
       <div className="max-w-6xl mx-auto">
@@ -30,7 +31,7 @@ export default function ZodiacSigns() {
               style={{ fontFamily: 'var(--font-cinzel)' }}>
             Zodiac Signs <span className="text-[#D4AF37]">Prediction</span>
           </h2>
-          <p className="text-white/40 text-sm mt-3 max-w-lg mx-auto">
+          <p className="text-white/58 text-sm mt-3 max-w-lg mx-auto">
             Select your zodiac sign to discover personalized predictions and cosmic guidance
             based on Vedic astrology.
           </p>
@@ -68,7 +69,7 @@ export default function ZodiacSigns() {
                    style={{ fontFamily: 'var(--font-cinzel)' }}>
                   {z.en}
                 </p>
-                <p className="text-white/35 text-xs mt-0.5"
+                <p className="text-white/52 text-xs mt-0.5"
                    style={{ fontFamily: 'var(--font-devanagari)' }}>
                   ({z.hi})
                 </p>
@@ -77,7 +78,7 @@ export default function ZodiacSigns() {
           ))}
         </div>
 
-        <p className="text-center text-white/25 text-xs mt-8">
+        <p className="text-center text-white/42 text-xs mt-8">
           Click any zodiac sign for detailed predictions and personalized guidance
         </p>
       </div>

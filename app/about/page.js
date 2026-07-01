@@ -41,9 +41,9 @@ export default function AboutPage() {
         crumbs={[{ label: 'About' }]}
       />
 
-      <main className="bg-[#050005]">
+      <main className="bg-[#0D0714]">
         {/* Bio section */}
-        <section className="py-20 px-4" style={{ background: 'radial-gradient(ellipse at 50% 50%, #0D0005 0%, #050005 100%)' }}>
+        <section className="py-20 px-4" style={{ background: 'radial-gradient(ellipse at 50% 50%, #180B22 0%, #0D0714 100%)' }}>
           <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
             {/* Image */}
             <div className="flex justify-center">
@@ -52,7 +52,7 @@ export default function AboutPage() {
                   className="absolute -inset-6 rounded-full border border-dashed border-[#D4AF37]/20 spin-slow"
                   aria-hidden="true"
                 />
-                <div className="w-64 h-64 md:w-80 md:h-80 rounded-full ring-4 ring-[#D4AF37]/30 shadow-[0_0_80px_rgba(212,175,55,0.15)] overflow-hidden bg-[#0D0005] p-4">
+                <div className="w-64 h-64 md:w-80 md:h-80 rounded-full ring-4 ring-[#D4AF37]/30 shadow-[0_0_80px_rgba(212,175,55,0.15)] overflow-hidden bg-[#180B22] p-4">
                   <Image
                     src="/logo.jpg"
                     alt="Rohit Sharmaji — Vedic Astrologer"

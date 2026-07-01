@@ -2,7 +2,7 @@ import { Phone, MessageCircle } from 'lucide-react';
 
 export default function Contact() {
   return (
-    <section id="contact" className="bg-[#1A0000] py-20 px-4">
+    <section id="contact" className="bg-[#2C0C16] py-20 px-4">
       <div className="max-w-4xl mx-auto text-center">
         {/* Heading */}
         <p className="text-[#FFD700]/70 text-sm font-semibold tracking-widest uppercase mb-2">Get in Touch</p>
@@ -23,7 +23,7 @@ export default function Contact() {
           {/* Phone */}
           <a
             href="tel:7600010811"
-            className="group flex flex-col items-center gap-4 bg-[#2A0000] border border-[#FFD700]/20 hover:border-[#FFD700] rounded-2xl p-8 transition-all hover:shadow-lg hover:shadow-[#FFD700]/10"
+            className="group flex flex-col items-center gap-4 bg-[#3A0E1A] border border-[#FFD700]/20 hover:border-[#FFD700] rounded-2xl p-8 transition-all hover:shadow-lg hover:shadow-[#FFD700]/10"
           >
             <div className="w-16 h-16 rounded-full bg-[#FFD700]/10 group-hover:bg-[#FFD700]/20 flex items-center justify-center transition-colors">
               <Phone className="text-[#FFD700]" size={28} />
@@ -31,9 +31,9 @@ export default function Contact() {
             <div>
               <p className="text-white/60 text-sm mb-1">Call Us</p>
               <p className="text-[#FFD700] text-2xl font-bold tracking-wide">76000 10811</p>
-              <p className="text-white/40 text-xs mt-1">Rohit Sharmaji</p>
+              <p className="text-white/58 text-xs mt-1">Rohit Sharmaji</p>
             </div>
-            <span className="bg-[#FFD700] text-[#1A0000] font-bold text-sm px-6 py-2 rounded-full group-hover:bg-yellow-300 transition-colors">
+            <span className="bg-[#FFD700] text-[#2C0C16] font-bold text-sm px-6 py-2 rounded-full group-hover:bg-yellow-300 transition-colors">
               Call Now
             </span>
           </a>
@@ -43,7 +43,7 @@ export default function Contact() {
             href="https://wa.me/917600010811?text=Namaste%20Rohit%20Sharmaji%2C%20I%20need%20astrological%20guidance."
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex flex-col items-center gap-4 bg-[#2A0000] border border-[#FFD700]/20 hover:border-[#25D366] rounded-2xl p-8 transition-all hover:shadow-lg hover:shadow-green-500/10"
+            className="group flex flex-col items-center gap-4 bg-[#3A0E1A] border border-[#FFD700]/20 hover:border-[#25D366] rounded-2xl p-8 transition-all hover:shadow-lg hover:shadow-green-500/10"
           >
             <div className="w-16 h-16 rounded-full bg-green-500/10 group-hover:bg-green-500/20 flex items-center justify-center transition-colors">
               <MessageCircle className="text-green-400" size={28} />
@@ -51,7 +51,7 @@ export default function Contact() {
             <div>
               <p className="text-white/60 text-sm mb-1">WhatsApp</p>
               <p className="text-green-400 text-2xl font-bold tracking-wide">76000 10811</p>
-              <p className="text-white/40 text-xs mt-1">Chat anytime</p>
+              <p className="text-white/58 text-xs mt-1">Chat anytime</p>
             </div>
             <span className="bg-[#25D366] text-white font-bold text-sm px-6 py-2 rounded-full group-hover:bg-green-400 transition-colors">
               WhatsApp Now
@@ -59,7 +59,7 @@ export default function Contact() {
           </a>
         </div>
 
-        <p className="text-white/30 text-xs mt-10">
+        <p className="text-white/48 text-xs mt-10">
           Available Mon – Sat, 9 AM – 7 PM (IST)
         </p>
       </div>

@@ -25,7 +25,7 @@ export default function LoveProblems() {
   return (
     <section
       className="py-20 px-4 border-t border-[#D4AF37]/8"
-      style={{ background: 'radial-gradient(ellipse at 100% 50%, #1A0000 0%, #050005 60%)' }}
+      style={{ background: 'radial-gradient(ellipse at 100% 50%, #2C0C16 0%, #0D0714 60%)' }}
       aria-labelledby="love-heading"
     >
       <div className="max-w-6xl mx-auto">

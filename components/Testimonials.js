@@ -33,7 +33,7 @@ export default function Testimonials() {
   return (
     <section
       className="py-20 px-4 border-t border-[#D4AF37]/8"
-      style={{ background: 'radial-gradient(ellipse at 50% 50%, #0D0005 0%, #050005 80%)' }}
+      style={{ background: 'radial-gradient(ellipse at 50% 50%, #180B22 0%, #0D0714 80%)' }}
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
@@ -61,7 +61,7 @@ export default function Testimonials() {
               <div className="flex items-center justify-between border-t border-[#D4AF37]/10 pt-4">
                 <div>
                   <cite className="text-white not-italic font-semibold text-sm">{t.name}</cite>
-                  <p className="text-white/35 text-xs">{t.location}</p>
+                  <p className="text-white/52 text-xs">{t.location}</p>
                 </div>
                 <span className="text-[10px] px-2 py-1 rounded-full border border-[#D4AF37]/20 text-[#D4AF37]/60">
                   {t.service}

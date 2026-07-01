@@ -20,7 +20,7 @@ export default function Footer() {
   return (
     <footer
       className="border-t border-[#D4AF37]/15 pt-14 pb-6 px-4 mt-auto"
-      style={{ background: 'linear-gradient(180deg, #080005 0%, #02000A 100%)' }}
+      style={{ background: 'linear-gradient(180deg, #12081A 0%, #0C0616 100%)' }}
       role="contentinfo"
     >
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
@@ -33,7 +33,7 @@ export default function Footer() {
               🕉️ Jyotish Shreenath Ji
             </p>
           </Link>
-          <p className="text-white/40 text-sm leading-relaxed">
+          <p className="text-white/58 text-sm leading-relaxed">
             Rohit Sharma is a trusted astrologer known for accurate predictions and effective
             remedies, helping clients find clarity and solutions for life&apos;s challenges.
           </p>
@@ -111,25 +111,25 @@ export default function Footer() {
           </h3>
           <ul className="space-y-4">
             <li>
-              <p className="text-white/30 text-xs uppercase tracking-widest mb-1">Phone / WhatsApp</p>
+              <p className="text-white/48 text-xs uppercase tracking-widest mb-1">Phone / WhatsApp</p>
               <a href="tel:7600010811"
                  className="text-white/65 text-sm hover:text-[#D4AF37] transition-colors">
                 76000 10811
               </a>
             </li>
             <li>
-              <p className="text-white/30 text-xs uppercase tracking-widest mb-1">Email</p>
+              <p className="text-white/48 text-xs uppercase tracking-widest mb-1">Email</p>
               <a href="mailto:jyotishshreenathji@gmail.com"
                  className="text-white/65 text-sm hover:text-[#D4AF37] transition-colors">
                 jyotishshreenathji@gmail.com
               </a>
             </li>
             <li>
-              <p className="text-white/30 text-xs uppercase tracking-widest mb-1">Hours</p>
+              <p className="text-white/48 text-xs uppercase tracking-widest mb-1">Hours</p>
               <p className="text-white/65 text-sm">Mon – Sat: 9:00 AM – 7:00 PM IST</p>
             </li>
             <li>
-              <p className="text-white/30 text-xs uppercase tracking-widest mb-1">WhatsApp</p>
+              <p className="text-white/48 text-xs uppercase tracking-widest mb-1">WhatsApp</p>
               <a href="https://wa.me/917600010811"
                  target="_blank"
                  rel="noopener noreferrer"
@@ -144,16 +144,16 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-[#D4AF37]/10 pt-6 flex flex-col sm:flex-row
                       items-center justify-between gap-3">
-        <p className="text-white/25 text-xs text-center sm:text-left">
+        <p className="text-white/42 text-xs text-center sm:text-left">
           © 2026 Jyotish Shreenath Ji. All Rights Reserved.
         </p>
         <div className="flex gap-4">
           <Link href="/privacy-services"
-                className="text-white/25 text-xs hover:text-[#D4AF37] transition-colors">
+                className="text-white/42 text-xs hover:text-[#D4AF37] transition-colors">
             Privacy Policy
           </Link>
           <Link href="/contact"
-                className="text-white/25 text-xs hover:text-[#D4AF37] transition-colors">
+                className="text-white/42 text-xs hover:text-[#D4AF37] transition-colors">
             Contact
           </Link>
         </div>

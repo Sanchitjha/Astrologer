@@ -29,7 +29,7 @@ export default function HowItWorks() {
   return (
     <section
       className="py-20 px-4 border-t border-[#D4AF37]/8"
-      style={{ background: 'linear-gradient(135deg, #0A0005 0%, #050005 50%, #0A0005 100%)' }}
+      style={{ background: 'linear-gradient(135deg, #160A1C 0%, #0D0714 50%, #160A1C 100%)' }}
       aria-labelledby="hiw-heading"
     >
       <div className="max-w-6xl mx-auto">
@@ -61,7 +61,7 @@ export default function HowItWorks() {
                                 transition-all duration-300">
                   <span className="text-3xl">{s.icon}</span>
                   <span className="absolute -top-2 -right-2 w-7 h-7 rounded-full
-                                   bg-[#D4AF37] text-[#050005] text-xs font-black
+                                   bg-[#D4AF37] text-[#0D0714] text-xs font-black
                                    flex items-center justify-center"
                         style={{ fontFamily: 'var(--font-cinzel)' }}>
                     {s.num}

@@ -10,7 +10,7 @@ export default function AstrologerBio() {
   return (
     <section
       className="py-20 px-4 border-t border-[#D4AF37]/8"
-      style={{ background: 'radial-gradient(ellipse at 0% 50%, #1A0000 0%, #050005 60%)' }}
+      style={{ background: 'radial-gradient(ellipse at 0% 50%, #2C0C16 0%, #0D0714 60%)' }}
       aria-labelledby="bio-heading"
     >
       <div className="max-w-6xl mx-auto">
@@ -35,7 +35,7 @@ export default function AstrologerBio() {
               <div className="absolute -inset-5 rounded-full border border-dashed border-[#D4AF37]/20 spin-slow"
                    aria-hidden="true" />
               <div className="w-60 h-60 md:w-72 md:h-72 rounded-full ring-4 ring-[#D4AF37]/30
-                              overflow-hidden bg-[#0D0005] p-4
+                              overflow-hidden bg-[#180B22] p-4
                               shadow-[0_0_60px_rgba(212,175,55,0.12)]">
                 <Image
                   src="/logo.jpg"

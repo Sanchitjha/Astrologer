@@ -1,7 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <line x1="12" y1="52" x2="52" y2="52" stroke="#C7B8EA" stroke-width="3" stroke-linecap="round"/>
-  <line x1="12" y1="40" x2="52" y2="40" stroke="#C7B8EA" stroke-width="3" stroke-linecap="round"/>
-  <path d="M20 40c0-8 6-14 12-14s12 6 12 14" stroke="#C7B8EA" stroke-width="3" stroke-linecap="round" fill="none"/>
-  <path d="M22 26c-6-4-8-10-4-16" stroke="#C7B8EA" stroke-width="3" stroke-linecap="round" fill="none"/>
-  <path d="M42 26c6-4 8-10 4-16" stroke="#C7B8EA" stroke-width="3" stroke-linecap="round" fill="none"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>Libra</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Libra" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Scale" fill="#C7B8EA" points="2 22 22 22 22 20 2 20"></polygon>
+        <path d="M17.2736,16 C18.9426,14.537 19.9996,12.395 19.9996,10 C19.9996,5.582 16.4186,2 11.9996,2 C7.5816,2 3.9996,5.582 3.9996,10 C3.9996,12.395 5.0576,14.537 6.7266,16 L1.9996,16 L1.9996,18 L9.9996,18 L9.9996,17.738 L9.9996,16 L9.9996,15.65 C7.6736,14.824 5.9996,12.606 5.9996,10 C5.9996,6.692 8.6916,4 11.9996,4 C15.3086,4 17.9996,6.692 17.9996,10 C17.9996,12.606 16.3266,14.824 13.9996,15.65 L13.9996,16 L13.9996,17.738 L13.9996,18 L21.9996,18 L21.9996,16 L17.2736,16 Z" id="Top" fill="#C7B8EA"></path>
+    </g>
 </svg>

@@ -35,7 +35,7 @@ export default function Reviews() {
   return (
     <section
       className="py-20 px-4 border-t border-[#D4AF37]/8"
-      style={{ background: 'radial-gradient(ellipse at 50% 100%, #1A0A00 0%, #050005 60%)' }}
+      style={{ background: 'radial-gradient(ellipse at 50% 100%, #2C1608 0%, #0D0714 60%)' }}
       aria-labelledby="reviews-heading"
     >
       <div className="max-w-6xl mx-auto">

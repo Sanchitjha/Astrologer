@@ -32,7 +32,7 @@ export default function BlogPage() {
         crumbs={[{ label: 'Blog' }]}
       />
 
-      <main className="bg-[#050005] py-16 px-4">
+      <main className="bg-[#0D0714] py-16 px-4">
         <div className="max-w-5xl mx-auto">
           {/* Coming soon message */}
           <div className="text-center mb-14">

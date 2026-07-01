@@ -9,7 +9,7 @@ export default function FloatingWhatsApp() {
     <div className="fixed bottom-6 right-5 z-50 flex flex-col items-end gap-2">
       {/* Tooltip */}
       {tip && (
-        <div className="flex items-center gap-2 bg-white text-[#050005] text-sm font-semibold px-4 py-2.5 rounded-2xl shadow-2xl animate-fade-in">
+        <div className="flex items-center gap-2 bg-white text-[#0D0714] text-sm font-semibold px-4 py-2.5 rounded-2xl shadow-2xl animate-fade-in">
           <span>Chat on WhatsApp</span>
           <button
             onClick={() => setTip(false)}

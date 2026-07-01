@@ -37,7 +37,7 @@ export default function YantraDetailPage({ params }) {
         crumbs={[{ label: 'Yantras', href: '/yantras' }, { label: yantra.name }]}
       />
 
-      <main className="bg-[#050005] py-16 px-4">
+      <main className="bg-[#0D0714] py-16 px-4">
         <div className="max-w-4xl mx-auto space-y-10">
 
           {/* Main card */}
@@ -75,7 +75,7 @@ export default function YantraDetailPage({ params }) {
                   {formatINR(yantra.salePrice)}
                 </span>
                 {yantra.originalPrice !== yantra.salePrice && (
-                  <span className="text-white/30 line-through text-sm">{formatINR(yantra.originalPrice)}</span>
+                  <span className="text-white/48 line-through text-sm">{formatINR(yantra.originalPrice)}</span>
                 )}
               </div>
 
@@ -100,7 +100,7 @@ export default function YantraDetailPage({ params }) {
                 Buy Now — GemsMantra →
               </a>
 
-              <p className="text-white/25 text-xs text-center">
+              <p className="text-white/42 text-xs text-center">
                 Authentic & energised · Sourced from GemsMantra.com
               </p>
             </div>

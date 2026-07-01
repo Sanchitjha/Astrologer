@@ -5,7 +5,7 @@ export default function PageHeader({ title, titleHindi, subtitle, crumbs = [] })
   return (
     <section
       className="relative pt-32 pb-20 px-4 text-center overflow-hidden"
-      style={{ background: 'radial-gradient(ellipse at 50% 0%, #3D0012 0%, #050005 70%)' }}
+      style={{ background: 'radial-gradient(ellipse at 50% 0%, #520F26 0%, #0D0714 70%)' }}
     >
       <StarField count={35} />
       <div className="om-watermark text-[12rem] opacity-[0.025]" aria-hidden="true"
@@ -15,7 +15,7 @@ export default function PageHeader({ title, titleHindi, subtitle, crumbs = [] })
 
       {/* Breadcrumb */}
       {crumbs.length > 0 && (
-        <nav aria-label="Breadcrumb" className="relative z-10 flex items-center justify-center gap-2 mb-6 text-xs text-white/35">
+        <nav aria-label="Breadcrumb" className="relative z-10 flex items-center justify-center gap-2 mb-6 text-xs text-white/52">
           <Link href="/" className="hover:text-[#D4AF37] transition-colors"
                 style={{ fontFamily: 'var(--font-cinzel)' }}>
             Home

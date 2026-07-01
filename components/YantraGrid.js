@@ -12,7 +12,7 @@ export default function YantraGrid({ preview = false }) {
   const shown = preview ? filtered.slice(0, 8) : filtered;
 
   return (
-    <section className="py-20 px-4" style={{ background: preview ? '#050005' : 'transparent' }}>
+    <section className="py-20 px-4" style={{ background: preview ? '#0D0714' : 'transparent' }}>
       <div className="max-w-7xl mx-auto">
 
         {preview && (
@@ -21,7 +21,7 @@ export default function YantraGrid({ preview = false }) {
             <h2 className="text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: 'var(--font-cinzel)' }}>
               Our <span className="text-[#D4AF37]">Yantra</span> Collection
             </h2>
-            <p className="text-white/40 text-sm mt-3 max-w-xl mx-auto">
+            <p className="text-white/58 text-sm mt-3 max-w-xl mx-auto">
               Authentic, energised Yantras sourced from GemsMantra. Each yantra is consecrated with Vedic mantras.
             </p>
             <div className="gold-divider max-w-xs mx-auto mt-6">
@@ -38,7 +38,7 @@ export default function YantraGrid({ preview = false }) {
               onClick={() => setActive(cat.key)}
               className={`px-4 py-2 rounded-full text-xs font-semibold border transition-all duration-200 ${
                 active === cat.key
-                  ? 'bg-[#D4AF37] text-[#050005] border-[#D4AF37] shadow-[0_0_15px_rgba(212,175,55,0.3)]'
+                  ? 'bg-[#D4AF37] text-[#0D0714] border-[#D4AF37] shadow-[0_0_15px_rgba(212,175,55,0.3)]'
                   : 'bg-transparent text-white/55 border-white/15 hover:border-[#D4AF37]/50 hover:text-[#D4AF37]'
               }`}
               style={{ fontFamily: 'var(--font-cinzel)' }}
@@ -64,7 +64,7 @@ export default function YantraGrid({ preview = false }) {
           </div>
         )}
 
-        <p className="text-center text-white/20 text-xs mt-10">
+        <p className="text-center text-white/38 text-xs mt-10">
           Products powered by{' '}
           <a
             href="https://gemsmantra.com/collections/yantras"

@@ -15,11 +15,11 @@ export default function Hero() {
       aria-label="Welcome — Jyotish Shreenath Ji"
     >
       {/* Background layers */}
-      <div className="absolute inset-0 bg-[#050005]" />
+      <div className="absolute inset-0 bg-[#0D0714]" />
       <div className="absolute inset-0"
-           style={{ background: 'radial-gradient(ellipse at 50% 0%, #3D0012 0%, #050005 65%)' }} />
+           style={{ background: 'radial-gradient(ellipse at 50% 0%, #520F26 0%, #0D0714 65%)' }} />
       <div className="absolute inset-x-0 bottom-0 h-40"
-           style={{ background: 'linear-gradient(to bottom, transparent, #050005)' }} />
+           style={{ background: 'linear-gradient(to bottom, transparent, #0D0714)' }} />
 
       <StarField count={65} />
 
@@ -86,7 +86,7 @@ export default function Hero() {
         </div>
 
         {/* Phone */}
-        <p className="text-white/30 text-xs animate-fade-in delay-500">
+        <p className="text-white/48 text-xs animate-fade-in delay-500">
           Rohit Sharmaji &nbsp;·&nbsp;{' '}
           <a href="tel:7600010811" className="text-white/50 hover:text-[#D4AF37] transition-colors">
             76000 10811

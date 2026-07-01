@@ -72,7 +72,7 @@ export default function ServicesPage() {
         crumbs={[{ label: 'Services' }]}
       />
 
-      <main className="bg-[#050005] py-16 px-4">
+      <main className="bg-[#0D0714] py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {services.map((s) => (
@@ -87,7 +87,7 @@ export default function ServicesPage() {
                         style={{ fontFamily: 'var(--font-cinzel)' }}>
                       {s.label}
                     </h2>
-                    <p className="text-white/40 text-sm" style={{ fontFamily: 'var(--font-devanagari)' }}>
+                    <p className="text-white/58 text-sm" style={{ fontFamily: 'var(--font-devanagari)' }}>
                       {s.labelHindi}
                     </p>
                   </div>
@@ -109,7 +109,7 @@ export default function ServicesPage() {
 
           {/* CTA */}
           <div className="mt-16 text-center">
-            <p className="text-white/40 mb-6 text-sm">
+            <p className="text-white/58 mb-6 text-sm">
               Ready to transform your life with Vedic wisdom?
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

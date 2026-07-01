@@ -52,7 +52,7 @@ export default function YantraCard({ id, slug, name, originalPrice, salePrice, d
             {formatINR(salePrice)}
           </span>
           {originalPrice !== salePrice && (
-            <span className="text-white/30 text-xs line-through">{formatINR(originalPrice)}</span>
+            <span className="text-white/48 text-xs line-through">{formatINR(originalPrice)}</span>
           )}
         </div>
 
