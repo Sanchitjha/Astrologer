@@ -49,11 +49,13 @@ export default function Footer() {
               { label: 'Facebook', href: '#', icon: '𝓕' },
               { label: 'Instagram', href: '#', icon: '📷' },
               { label: 'Twitter/X', href: '#', icon: '𝕏' },
-              { label: 'WhatsApp', href: 'https://wa.me/919876543210', icon: '💬' },
+              { label: 'WhatsApp', href: 'https://wa.me/917600010811', icon: '💬' },
             ].map((s) => (
               <a key={s.label}
                  href={s.href}
                  aria-label={s.label}
+                 target={s.href.startsWith('http') ? '_blank' : undefined}
+                 rel={s.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                  className="w-9 h-9 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/25
                             flex items-center justify-center text-sm text-white/60
                             hover:bg-[#D4AF37]/20 hover:text-[#D4AF37] transition-colors">
@@ -109,26 +111,31 @@ export default function Footer() {
           </h3>
           <ul className="space-y-4">
             <li>
-              <p className="text-white/30 text-xs uppercase tracking-widest mb-1">Address</p>
-              <p className="text-white/50 text-sm italic">[ To be added ]</p>
-            </li>
-            <li>
               <p className="text-white/30 text-xs uppercase tracking-widest mb-1">Phone / WhatsApp</p>
-              <a href="tel:+919876543210"
+              <a href="tel:7600010811"
                  className="text-white/65 text-sm hover:text-[#D4AF37] transition-colors">
-                [ To be added ]
+                76000 10811
               </a>
             </li>
             <li>
               <p className="text-white/30 text-xs uppercase tracking-widest mb-1">Email</p>
-              <a href="mailto:info@jyotishshreenath.com"
+              <a href="mailto:jyotishshreenathji@gmail.com"
                  className="text-white/65 text-sm hover:text-[#D4AF37] transition-colors">
-                [ To be added ]
+                jyotishshreenathji@gmail.com
               </a>
             </li>
             <li>
               <p className="text-white/30 text-xs uppercase tracking-widest mb-1">Hours</p>
-              <p className="text-white/65 text-sm">Mon – Sun: 7:00 AM – 10:00 PM IST</p>
+              <p className="text-white/65 text-sm">Mon – Sat: 9:00 AM – 7:00 PM IST</p>
+            </li>
+            <li>
+              <p className="text-white/30 text-xs uppercase tracking-widest mb-1">WhatsApp</p>
+              <a href="https://wa.me/917600010811"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="text-white/65 text-sm hover:text-[#D4AF37] transition-colors">
+                Chat on WhatsApp →
+              </a>
             </li>
           </ul>
         </div>

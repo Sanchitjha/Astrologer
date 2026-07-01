@@ -52,7 +52,7 @@ export default function Navbar() {
               priority
             />
           </div>
-          <div className="hidden lg:block leading-tight">
+          <div className="hidden sm:block leading-tight">
             <span className="block text-[#D4AF37] font-bold text-[13px]"
                   style={{ fontFamily: 'var(--font-devanagari)' }}>
               ज्योतिष श्रीनाथ जी

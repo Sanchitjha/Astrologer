@@ -50,12 +50,19 @@ export default function ZodiacSigns() {
                          hover:shadow-[0_0_25px_rgba(212,175,55,0.15)] hover:-translate-y-1"
               aria-label={`${z.en} zodiac prediction`}
             >
-              <span
-                className="text-4xl md:text-5xl block transition-transform duration-300 group-hover:scale-110"
-                style={{ color: z.color }}
+              <div
+                className="w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
+                style={{ background: `radial-gradient(circle, ${z.color}15, ${z.color}05)`, border: `1px solid ${z.color}30` }}
               >
-                {z.sign}
-              </span>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={`/zodiac/${z.slug}.svg`}
+                  alt={`${z.en} zodiac sign`}
+                  width={48}
+                  height={48}
+                  className="w-10 h-10 md:w-12 md:h-12 object-contain"
+                />
+              </div>
               <div>
                 <p className="text-white/80 text-xs font-semibold"
                    style={{ fontFamily: 'var(--font-cinzel)' }}>
