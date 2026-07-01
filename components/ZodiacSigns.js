@@ -1,0 +1,79 @@
+import Link from 'next/link';
+
+const zodiacs = [
+  { sign: '♈', en: 'Aries',       hi: 'मेष',      slug: 'aries',       color: '#FF6B6B' },
+  { sign: '♉', en: 'Taurus',      hi: 'वृषभ',     slug: 'taurus',      color: '#4ECDC4' },
+  { sign: '♊', en: 'Gemini',      hi: 'मिथुन',    slug: 'gemini',      color: '#FFE66D' },
+  { sign: '♋', en: 'Cancer',      hi: 'कर्क',     slug: 'cancer',      color: '#A8D8EA' },
+  { sign: '♌', en: 'Leo',         hi: 'सिंह',     slug: 'leo',         color: '#FF9F43' },
+  { sign: '♍', en: 'Virgo',       hi: 'कन्या',    slug: 'virgo',       color: '#88D8B0' },
+  { sign: '♎', en: 'Libra',       hi: 'तुला',     slug: 'libra',       color: '#C7B8EA' },
+  { sign: '♏', en: 'Scorpio',     hi: 'वृश्चिक',  slug: 'scorpio',     color: '#FF6B9D' },
+  { sign: '♐', en: 'Sagittarius', hi: 'धनु',      slug: 'sagittarius', color: '#96CEB4' },
+  { sign: '♑', en: 'Capricorn',   hi: 'मकर',      slug: 'capricorn',   color: '#DDA0DD' },
+  { sign: '♒', en: 'Aquarius',    hi: 'कुंभ',     slug: 'aquarius',    color: '#74B9FF' },
+  { sign: '♓', en: 'Pisces',      hi: 'मीन',      slug: 'pisces',      color: '#A29BFE' },
+];
+
+export default function ZodiacSigns() {
+  return (
+    <section
+      className="py-20 px-4 border-t border-[#D4AF37]/8"
+      style={{ background: 'radial-gradient(ellipse at 50% 50%, #0D0005 0%, #050005 80%)' }}
+      aria-labelledby="zodiac-heading"
+    >
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-12">
+          <p className="section-label mb-3">Astrology Predictions</p>
+          <h2 id="zodiac-heading"
+              className="text-3xl md:text-4xl font-bold text-white"
+              style={{ fontFamily: 'var(--font-cinzel)' }}>
+            Zodiac Signs <span className="text-[#D4AF37]">Prediction</span>
+          </h2>
+          <p className="text-white/40 text-sm mt-3 max-w-lg mx-auto">
+            Select your zodiac sign to discover personalized predictions and cosmic guidance
+            based on Vedic astrology.
+          </p>
+          <div className="gold-divider max-w-xs mx-auto mt-5">
+            <span className="text-[#D4AF37] text-lg shrink-0"
+                  style={{ fontFamily: 'var(--font-devanagari)' }}>ॐ</span>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
+          {zodiacs.map((z) => (
+            <Link
+              key={z.slug}
+              href={`/zodiac/${z.slug}`}
+              className="glass-card rounded-2xl p-4 flex flex-col items-center gap-2 text-center
+                         group transition-all duration-300
+                         hover:shadow-[0_0_25px_rgba(212,175,55,0.15)] hover:-translate-y-1"
+              aria-label={`${z.en} zodiac prediction`}
+            >
+              <span
+                className="text-4xl md:text-5xl block transition-transform duration-300 group-hover:scale-110"
+                style={{ color: z.color }}
+              >
+                {z.sign}
+              </span>
+              <div>
+                <p className="text-white/80 text-xs font-semibold"
+                   style={{ fontFamily: 'var(--font-cinzel)' }}>
+                  {z.en}
+                </p>
+                <p className="text-white/35 text-xs mt-0.5"
+                   style={{ fontFamily: 'var(--font-devanagari)' }}>
+                  ({z.hi})
+                </p>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        <p className="text-center text-white/25 text-xs mt-8">
+          Click any zodiac sign for detailed predictions and personalized guidance
+        </p>
+      </div>
+    </section>
+  );
+}
