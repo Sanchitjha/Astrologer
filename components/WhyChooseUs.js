@@ -1,16 +1,5 @@
 import Link from 'next/link';
 
-const points = [
-  'Over 15 years of dedicated practice in Vedic Astrology, Numerology, and Vastu Shastra',
-  'Personalized consultations — every reading is unique and tailored to your situation',
-  'Available 24/7 for urgent matters via WhatsApp and phone',
-  'Guidance based on authentic ancient scriptures and modern astrological techniques',
-  'Remedies that are practical, affordable, and spiritually effective',
-  'Strict confidentiality — your personal information is never shared',
-  'Consultations available in Hindi, English, and regional languages',
-  'Trusted by clients across India, the USA, UK, Canada, and Australia',
-];
-
 export default function WhyChooseUs() {
   return (
     <section
@@ -24,7 +13,7 @@ export default function WhyChooseUs() {
           <h2 id="wcu-heading"
               className="text-3xl md:text-4xl font-bold text-white"
               style={{ fontFamily: 'var(--font-cinzel)' }}>
-            Why Choose <span className="text-[#D4AF37]">Jyotish Shreenath Ji</span>?
+            Why Choose <span className="text-[#D4AF37]">Rohit Sharma</span>?
           </h2>
           <div className="gold-divider max-w-xs mx-auto mt-5">
             <span className="text-[#D4AF37] text-lg shrink-0"
@@ -35,30 +24,24 @@ export default function WhyChooseUs() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text block */}
           <div>
-            <p className="text-white/65 leading-relaxed mb-6">
-              At Jyotish Shreenath Ji, we believe that every person deserves accurate, compassionate,
-              and life-transforming astrological guidance. Pandit Rohit Sharma Ji combines ancient
-              Vedic wisdom with a deep understanding of modern challenges to provide solutions that
-              truly make a difference in your life.
+            <p className="text-white/65 leading-relaxed mb-5">
+              When you&apos;re looking for genuine guidance, accurate predictions, and meaningful
+              solutions, Rohit Sharma is committed to helping you with trusted Vedic astrology
+              services. With over 15+ years of experience, he provides personalized consultations
+              for love, marriage, career, business, finance, health, and family-related concerns.
+            </p>
+            <p className="text-white/65 leading-relaxed mb-5">
+              As a trusted Online Astrologer in India, Rohit Sharma offers convenient
+              consultations through phone calls, WhatsApp, and online sessions, making expert
+              astrology guidance accessible from anywhere. Every horoscope reading is carefully
+              analyzed and tailored to your birth details for accurate insights.
             </p>
             <p className="text-white/65 leading-relaxed mb-8">
-              Whether you are facing challenges in love, marriage, career, health, or finances,
-              our expert astrologers offer precise remedies backed by authentic scriptures and
-              years of practical experience. We are committed to helping you find clarity,
-              peace, and a path forward.
+              Clients choose Rohit Sharma for honest guidance, practical remedies, complete
+              confidentiality, and a client-focused approach. Whether you&apos;re facing relationship
+              challenges, career uncertainty, financial issues, or personal obstacles, he provides
+              effective astrological solutions designed to bring clarity and confidence.
             </p>
-
-            <ul className="space-y-3 mb-10">
-              {points.map((pt) => (
-                <li key={pt} className="flex items-start gap-3">
-                  <span className="mt-1 w-5 h-5 rounded-full bg-[#D4AF37]/15 border border-[#D4AF37]/40
-                                   flex items-center justify-center shrink-0 text-[#D4AF37] text-xs">
-                    ✓
-                  </span>
-                  <span className="text-white/65 text-sm leading-relaxed">{pt}</span>
-                </li>
-              ))}
-            </ul>
 
             <Link href="/contact"
                   className="btn-crimson inline-flex items-center gap-2 rounded-full px-8 py-3 font-bold text-sm"

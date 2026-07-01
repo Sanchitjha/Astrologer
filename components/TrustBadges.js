@@ -3,25 +3,25 @@ const badges = [
     icon: '🛡️',
     stat: 'Trusted',
     label: 'Astrologer',
-    desc: 'Verified by thousands of clients across India and worldwide.',
+    desc: 'Known for providing reliable astrology consultations with accurate predictions and personalized guidance.',
   },
   {
     icon: '✅',
     stat: 'Genuine',
     label: 'Guidance',
-    desc: 'Honest, accurate predictions without false promises or shortcuts.',
+    desc: 'Receive honest astrology advice and practical remedies tailored to your unique life challenges and goals.',
   },
   {
     icon: '👥',
     stat: '200+',
     label: 'Expert Team',
-    desc: 'Experienced astrologers, Vastu consultants, and spiritual guides.',
+    desc: 'Supported by a dedicated team of experienced astrology professionals committed to delivering quality consultation.',
   },
   {
     icon: '😊',
     stat: '5000+',
     label: 'Happy Clients',
-    desc: 'Satisfied families who found peace and clarity through our guidance.',
+    desc: 'Trusted by over 5,000 satisfied clients across India and around the world for authentic astrology solutions.',
   },
 ];
 
