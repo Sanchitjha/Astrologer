@@ -29,22 +29,22 @@ export default function HowItWorks() {
   return (
     <section
       className="py-20 px-4 border-t border-[#D4AF37]/8"
-      style={{ background: 'linear-gradient(135deg, #160A1C 0%, #0D0714 50%, #160A1C 100%)' }}
+      style={{ background: 'linear-gradient(135deg, #FBF3E0 0%, #FBF3E0 50%, #FBF3E0 100%)' }}
       aria-labelledby="hiw-heading"
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-14">
           <p className="section-label mb-3">Simple Process</p>
           <h2 id="hiw-heading"
-              className="text-3xl md:text-4xl font-bold text-white"
+              className="text-3xl md:text-4xl font-bold text-[#2A1408]"
               style={{ fontFamily: 'var(--font-cinzel)' }}>
-            How Online Astrology <span className="text-[#D4AF37]">Consultation Works</span>
+            How Online Astrology <span className="text-[#9E7016]">Consultation Works</span>
           </h2>
           <div className="gold-divider max-w-xs mx-auto mt-5">
-            <span className="text-[#D4AF37] text-lg shrink-0"
+            <span className="text-[#9E7016] text-lg shrink-0"
                   style={{ fontFamily: 'var(--font-devanagari)' }}>ॐ</span>
           </div>
-          <p className="text-white/50 text-sm mt-4 max-w-xl mx-auto">
+          <p className="text-[#2A1408]/50 text-sm mt-4 max-w-xl mx-auto">
             Follow these simple steps to connect with our expert astrologer and receive
             personalized astrology guidance from anywhere.
           </p>
@@ -61,17 +61,17 @@ export default function HowItWorks() {
                                 transition-all duration-300">
                   <span className="text-3xl">{s.icon}</span>
                   <span className="absolute -top-2 -right-2 w-7 h-7 rounded-full
-                                   bg-[#D4AF37] text-[#0D0714] text-xs font-black
+                                   bg-[#D4AF37] text-[#FBF3E0] text-xs font-black
                                    flex items-center justify-center"
                         style={{ fontFamily: 'var(--font-cinzel)' }}>
                     {s.num}
                   </span>
                 </div>
-                <h3 className="text-[#D4AF37] font-bold text-base"
+                <h3 className="text-[#9E7016] font-bold text-base"
                     style={{ fontFamily: 'var(--font-cinzel)' }}>
                   {s.title}
                 </h3>
-                <p className="text-white/55 text-sm leading-relaxed max-w-[200px]">{s.desc}</p>
+                <p className="text-[#2A1408]/55 text-sm leading-relaxed max-w-[200px]">{s.desc}</p>
               </div>
             ))}
           </div>
