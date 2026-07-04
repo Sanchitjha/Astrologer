@@ -41,9 +41,9 @@ export default function AboutPage() {
         crumbs={[{ label: 'About' }]}
       />
 
-      <main className="bg-[#0D0714]">
+      <main className="bg-[#FBF3E0]">
         {/* Bio section */}
-        <section className="py-20 px-4" style={{ background: 'radial-gradient(ellipse at 50% 50%, #180B22 0%, #0D0714 100%)' }}>
+        <section className="py-20 px-4" style={{ background: 'radial-gradient(ellipse at 50% 50%, #FBF3E0 0%, #FBF3E0 100%)' }}>
           <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
             {/* Image */}
             <div className="flex justify-center">
@@ -52,7 +52,7 @@ export default function AboutPage() {
                   className="absolute -inset-6 rounded-full border border-dashed border-[#D4AF37]/20 spin-slow"
                   aria-hidden="true"
                 />
-                <div className="w-64 h-64 md:w-80 md:h-80 rounded-full ring-4 ring-[#D4AF37]/30 shadow-[0_0_80px_rgba(212,175,55,0.15)] overflow-hidden bg-[#180B22] p-4">
+                <div className="w-64 h-64 md:w-80 md:h-80 rounded-full ring-4 ring-[#D4AF37]/30 shadow-[0_0_80px_rgba(212,175,55,0.15)] overflow-hidden bg-[#FBF3E0] p-4">
                   <Image
                     src="/logo.jpg"
                     alt="Rohit Sharmaji — Vedic Astrologer"
@@ -70,18 +70,18 @@ export default function AboutPage() {
                 20+ Years of Vedic Wisdom
               </span>
               <h2
-                className="text-3xl md:text-4xl font-bold leading-tight text-white"
+                className="text-3xl md:text-4xl font-bold leading-tight text-[#2A1408]"
                 style={{ fontFamily: 'var(--font-cinzel)' }}
               >
                 Rohit Sharmaji
-                <span className="block text-[#D4AF37] text-xl md:text-2xl mt-1">Expert Vedic Astrologer</span>
+                <span className="block text-[#9E7016] text-xl md:text-2xl mt-1">Expert Vedic Astrologer</span>
               </h2>
-              <p className="text-white/65 text-base leading-relaxed">
+              <p className="text-[#2A1408]/65 text-base leading-relaxed">
                 With over two decades of dedicated practice in Vedic Jyotish, Rohit Sharmaji has guided
                 thousands of families towards prosperity, peace, and purpose. His expertise spans Kundali
                 analysis, Yantra remedies, Vastu consultation, and planetary gemstone advice.
               </p>
-              <p className="text-white/65 text-base leading-relaxed">
+              <p className="text-[#2A1408]/65 text-base leading-relaxed">
                 Rooted in the ancient Vaishnav tradition, every reading is conducted with deep devotion
                 and precision — providing practical, actionable solutions aligned with the cosmic energies
                 at play in your life.
@@ -102,17 +102,17 @@ export default function AboutPage() {
         <section className="py-16 px-4 border-t border-[#D4AF37]/10">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <p className="section-label mb-3">Journey</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: 'var(--font-cinzel)' }}>
-              The Path of <span className="text-[#D4AF37]">Jyotish</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2A1408]" style={{ fontFamily: 'var(--font-cinzel)' }}>
+              The Path of <span className="text-[#9E7016]">Jyotish</span>
             </h2>
           </div>
           <div className="max-w-xl mx-auto space-y-4">
             {milestones.map((m, i) => (
               <div key={i} className="glass-card rounded-2xl px-6 py-4 flex items-center gap-5">
-                <span className="text-[#FFD700] font-black text-sm shrink-0"
+                <span className="text-[#C1102E] font-black text-sm shrink-0"
                       style={{ fontFamily: 'var(--font-cinzel)' }}>{m.year}</span>
                 <div className="w-px h-10 bg-[#D4AF37]/30 shrink-0" />
-                <p className="text-white/75 text-sm">{m.event}</p>
+                <p className="text-[#2A1408]/75 text-sm">{m.event}</p>
               </div>
             ))}
           </div>
@@ -123,8 +123,8 @@ export default function AboutPage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <p className="section-label mb-3">Our Services</p>
-              <h2 className="text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: 'var(--font-cinzel)' }}>
-                What We <span className="text-[#D4AF37]">Offer</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#2A1408]" style={{ fontFamily: 'var(--font-cinzel)' }}>
+                What We <span className="text-[#9E7016]">Offer</span>
               </h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -134,10 +134,10 @@ export default function AboutPage() {
                   className="glass-card rounded-2xl p-6 space-y-3"
                 >
                   <span className="text-4xl block">{s.icon}</span>
-                  <h3 className="text-[#D4AF37] font-bold text-base" style={{ fontFamily: 'var(--font-cinzel)' }}>
+                  <h3 className="text-[#9E7016] font-bold text-base" style={{ fontFamily: 'var(--font-cinzel)' }}>
                     {s.label}
                   </h3>
-                  <p className="text-white/55 text-sm leading-relaxed">{s.desc}</p>
+                  <p className="text-[#2A1408]/55 text-sm leading-relaxed">{s.desc}</p>
                 </div>
               ))}
             </div>
