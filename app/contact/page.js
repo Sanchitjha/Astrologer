@@ -39,7 +39,7 @@ export default function ContactPage() {
         crumbs={[{ label: 'Contact' }]}
       />
 
-      <main className="bg-[#0D0714] py-16 px-4">
+      <main className="bg-[#FBF3E0] py-16 px-4">
         <div className="max-w-5xl mx-auto space-y-12">
 
           {/* Info cards */}
@@ -47,12 +47,12 @@ export default function ContactPage() {
             {info.map(({ icon: Icon, label, value, sub }) => (
               <div key={label} className="glass-card rounded-2xl p-6 flex items-start gap-4">
                 <div className="w-10 h-10 rounded-xl bg-[#D4AF37]/10 flex items-center justify-center shrink-0">
-                  <Icon size={20} className="text-[#D4AF37]" />
+                  <Icon size={20} className="text-[#9E7016]" />
                 </div>
                 <div>
-                  <p className="text-[#D4AF37]/70 text-xs mb-1 section-label">{label}</p>
-                  <p className="text-white font-semibold text-sm">{value}</p>
-                  <p className="text-white/58 text-xs mt-0.5">{sub}</p>
+                  <p className="text-[#9E7016]/70 text-xs mb-1 section-label">{label}</p>
+                  <p className="text-[#2A1408] font-semibold text-sm">{value}</p>
+                  <p className="text-[#2A1408]/58 text-xs mt-0.5">{sub}</p>
                 </div>
               </div>
             ))}
@@ -73,13 +73,13 @@ export default function ContactPage() {
                 className="group glass-card rounded-2xl p-8 flex flex-col items-center gap-5 text-center transition-all hover:border-[#D4AF37]/50 hover:shadow-[0_0_30px_rgba(212,175,55,0.12)] flex-1"
               >
                 <div className="w-16 h-16 rounded-full bg-[#D4AF37]/10 flex items-center justify-center pulse-gold group-hover:bg-[#D4AF37]/20 transition-colors">
-                  <Phone className="text-[#FFD700]" size={28} />
+                  <Phone className="text-[#C1102E]" size={28} />
                 </div>
                 <div>
-                  <p className="text-white/50 text-xs mb-1 section-label">Call Us</p>
-                  <p className="text-[#FFD700] text-2xl font-black tracking-wide"
+                  <p className="text-[#2A1408]/50 text-xs mb-1 section-label">Call Us</p>
+                  <p className="text-[#C1102E] text-2xl font-black tracking-wide"
                      style={{ fontFamily: 'var(--font-cinzel)' }}>76000 10811</p>
-                  <p className="text-white/52 text-xs mt-1">Rohit Sharmaji — Direct Line</p>
+                  <p className="text-[#2A1408]/52 text-xs mt-1">Rohit Sharmaji — Direct Line</p>
                 </div>
                 <span className="btn-gold !py-2 !px-8" style={{ fontFamily: 'var(--font-cinzel)' }}>
                   Call Now
@@ -97,10 +97,10 @@ export default function ContactPage() {
                   <MessageCircle className="text-green-400" size={28} />
                 </div>
                 <div>
-                  <p className="text-white/50 text-xs mb-1 section-label">WhatsApp</p>
-                  <p className="text-green-400 text-2xl font-black tracking-wide"
+                  <p className="text-[#2A1408]/50 text-xs mb-1 section-label">WhatsApp</p>
+                  <p className="text-green-600 text-2xl font-black tracking-wide"
                      style={{ fontFamily: 'var(--font-cinzel)' }}>76000 10811</p>
-                  <p className="text-white/52 text-xs mt-1">Chat anytime</p>
+                  <p className="text-[#2A1408]/52 text-xs mt-1">Chat anytime</p>
                 </div>
                 <span
                   className="inline-flex items-center justify-center gap-2 font-bold py-2 px-8 rounded-full text-white text-sm transition-all hover:scale-105"
@@ -113,7 +113,7 @@ export default function ContactPage() {
           </div>
 
           {/* Note */}
-          <p className="text-center text-white/42 text-xs">
+          <p className="text-center text-[#2A1408]/42 text-xs">
             All consultations are confidential. For Kundali reading please keep your birth date, time, and place ready.
           </p>
         </div>
