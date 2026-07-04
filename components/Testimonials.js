@@ -33,16 +33,16 @@ export default function Testimonials() {
   return (
     <section
       className="py-20 px-4 border-t border-[#D4AF37]/8"
-      style={{ background: 'radial-gradient(ellipse at 50% 50%, #180B22 0%, #0D0714 80%)' }}
+      style={{ background: 'radial-gradient(ellipse at 50% 50%, #FBF3E0 0%, #FBF3E0 80%)' }}
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <p className="section-label mb-3">What Clients Say</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: 'var(--font-cinzel)' }}>
-            Client <span className="text-[#D4AF37]">Testimonials</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2A1408]" style={{ fontFamily: 'var(--font-cinzel)' }}>
+            Client <span className="text-[#9E7016]">Testimonials</span>
           </h2>
           <div className="gold-divider max-w-xs mx-auto mt-5">
-            <span className="text-[#D4AF37] text-lg shrink-0" style={{ fontFamily: 'var(--font-devanagari)' }}>ॐ</span>
+            <span className="text-[#9E7016] text-lg shrink-0" style={{ fontFamily: 'var(--font-devanagari)' }}>ॐ</span>
           </div>
         </div>
 
@@ -52,18 +52,18 @@ export default function Testimonials() {
               {/* Stars */}
               <div className="flex gap-1">
                 {Array.from({ length: t.stars }).map((_, j) => (
-                  <span key={j} className="text-[#FFD700] text-sm">★</span>
+                  <span key={j} className="text-[#C1102E] text-sm">★</span>
                 ))}
               </div>
 
-              <p className="text-white/70 text-sm leading-relaxed italic">&ldquo;{t.text}&rdquo;</p>
+              <p className="text-[#2A1408]/70 text-sm leading-relaxed italic">&ldquo;{t.text}&rdquo;</p>
 
               <div className="flex items-center justify-between border-t border-[#D4AF37]/10 pt-4">
                 <div>
-                  <cite className="text-white not-italic font-semibold text-sm">{t.name}</cite>
-                  <p className="text-white/52 text-xs">{t.location}</p>
+                  <cite className="text-[#2A1408] not-italic font-semibold text-sm">{t.name}</cite>
+                  <p className="text-[#2A1408]/52 text-xs">{t.location}</p>
                 </div>
-                <span className="text-[10px] px-2 py-1 rounded-full border border-[#D4AF37]/20 text-[#D4AF37]/60">
+                <span className="text-[10px] px-2 py-1 rounded-full border border-[#D4AF37]/20 text-[#9E7016]/60">
                   {t.service}
                 </span>
               </div>
