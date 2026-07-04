@@ -48,12 +48,12 @@ export default function ContactForm() {
       <div className="glass-card rounded-2xl p-10 text-center space-y-4">
         <span className="text-5xl block">✅</span>
         <h3
-          className="text-[#D4AF37] text-xl font-bold"
+          className="text-[#9E7016] text-xl font-bold"
           style={{ fontFamily: 'var(--font-cinzel)' }}
         >
           Message Sent!
         </h3>
-        <p className="text-white/60 text-sm">
+        <p className="text-[#2A1408]/60 text-sm">
           Thank you for reaching out. Rohit Sharmaji will get back to you soon.
         </p>
         <button
@@ -73,18 +73,18 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="glass-card rounded-2xl p-7 space-y-5">
       <h3
-        className="text-[#D4AF37] font-bold text-lg text-center"
+        className="text-[#9E7016] font-bold text-lg text-center"
         style={{ fontFamily: 'var(--font-cinzel)' }}
       >
         Book Your Consultation
       </h3>
-      <p className="text-white/58 text-xs text-center">
+      <p className="text-[#2A1408]/58 text-xs text-center">
         Fill out the form below and we will connect with you shortly.
       </p>
 
       <div className="grid sm:grid-cols-2 gap-4">
         <div className="space-y-1.5">
-          <label htmlFor="name" className="text-white/50 text-xs font-semibold tracking-wider uppercase">
+          <label htmlFor="name" className="text-[#2A1408]/50 text-xs font-semibold tracking-wider uppercase">
             Full Name <span className="text-red-400">*</span>
           </label>
           <input
@@ -95,12 +95,12 @@ export default function ContactForm() {
             value={form.name}
             onChange={handleChange}
             placeholder="Your full name"
-            className="w-full bg-white/5 border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/42 focus:border-[#D4AF37]/60 focus:outline-none focus:ring-1 focus:ring-[#D4AF37]/30 transition-colors"
+            className="w-full bg-[#FBF3E0] border border-[#9E7016]/30 rounded-xl px-4 py-3 text-sm text-[#2A1408] placeholder:text-[#2A1408]/42 focus:border-[#C1102E]/60 focus:outline-none focus:ring-1 focus:ring-[#C1102E]/20 transition-colors"
           />
         </div>
 
         <div className="space-y-1.5">
-          <label htmlFor="phone" className="text-white/50 text-xs font-semibold tracking-wider uppercase">
+          <label htmlFor="phone" className="text-[#2A1408]/50 text-xs font-semibold tracking-wider uppercase">
             Phone Number <span className="text-red-400">*</span>
           </label>
           <input
@@ -111,13 +111,13 @@ export default function ContactForm() {
             value={form.phone}
             onChange={handleChange}
             placeholder="Your phone number"
-            className="w-full bg-white/5 border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/42 focus:border-[#D4AF37]/60 focus:outline-none focus:ring-1 focus:ring-[#D4AF37]/30 transition-colors"
+            className="w-full bg-[#FBF3E0] border border-[#9E7016]/30 rounded-xl px-4 py-3 text-sm text-[#2A1408] placeholder:text-[#2A1408]/42 focus:border-[#C1102E]/60 focus:outline-none focus:ring-1 focus:ring-[#C1102E]/20 transition-colors"
           />
         </div>
       </div>
 
       <div className="space-y-1.5">
-        <label htmlFor="email" className="text-white/50 text-xs font-semibold tracking-wider uppercase">
+        <label htmlFor="email" className="text-[#2A1408]/50 text-xs font-semibold tracking-wider uppercase">
           Email Address
         </label>
         <input
@@ -127,13 +127,13 @@ export default function ContactForm() {
           value={form.email}
           onChange={handleChange}
           placeholder="Your email address"
-          className="w-full bg-white/5 border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/42 focus:border-[#D4AF37]/60 focus:outline-none focus:ring-1 focus:ring-[#D4AF37]/30 transition-colors"
+          className="w-full bg-[#FBF3E0] border border-[#9E7016]/30 rounded-xl px-4 py-3 text-sm text-[#2A1408] placeholder:text-[#2A1408]/42 focus:border-[#C1102E]/60 focus:outline-none focus:ring-1 focus:ring-[#C1102E]/20 transition-colors"
         />
       </div>
 
       <div className="grid sm:grid-cols-3 gap-4">
         <div className="space-y-1.5">
-          <label htmlFor="dob" className="text-white/50 text-xs font-semibold tracking-wider uppercase">
+          <label htmlFor="dob" className="text-[#2A1408]/50 text-xs font-semibold tracking-wider uppercase">
             Date of Birth
           </label>
           <input
@@ -142,12 +142,12 @@ export default function ContactForm() {
             type="date"
             value={form.dob}
             onChange={handleChange}
-            className="w-full bg-white/5 border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/42 focus:border-[#D4AF37]/60 focus:outline-none focus:ring-1 focus:ring-[#D4AF37]/30 transition-colors [color-scheme:dark]"
+            className="w-full bg-[#FBF3E0] border border-[#9E7016]/30 rounded-xl px-4 py-3 text-sm text-[#2A1408] placeholder:text-[#2A1408]/42 focus:border-[#C1102E]/60 focus:outline-none focus:ring-1 focus:ring-[#C1102E]/20 transition-colors [color-scheme:light]"
           />
         </div>
 
         <div className="space-y-1.5">
-          <label htmlFor="tob" className="text-white/50 text-xs font-semibold tracking-wider uppercase">
+          <label htmlFor="tob" className="text-[#2A1408]/50 text-xs font-semibold tracking-wider uppercase">
             Time of Birth
           </label>
           <input
@@ -156,12 +156,12 @@ export default function ContactForm() {
             type="time"
             value={form.tob}
             onChange={handleChange}
-            className="w-full bg-white/5 border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/42 focus:border-[#D4AF37]/60 focus:outline-none focus:ring-1 focus:ring-[#D4AF37]/30 transition-colors [color-scheme:dark]"
+            className="w-full bg-[#FBF3E0] border border-[#9E7016]/30 rounded-xl px-4 py-3 text-sm text-[#2A1408] placeholder:text-[#2A1408]/42 focus:border-[#C1102E]/60 focus:outline-none focus:ring-1 focus:ring-[#C1102E]/20 transition-colors [color-scheme:light]"
           />
         </div>
 
         <div className="space-y-1.5">
-          <label htmlFor="pob" className="text-white/50 text-xs font-semibold tracking-wider uppercase">
+          <label htmlFor="pob" className="text-[#2A1408]/50 text-xs font-semibold tracking-wider uppercase">
             Place of Birth
           </label>
           <input
@@ -171,13 +171,13 @@ export default function ContactForm() {
             value={form.pob}
             onChange={handleChange}
             placeholder="City, State"
-            className="w-full bg-white/5 border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/42 focus:border-[#D4AF37]/60 focus:outline-none focus:ring-1 focus:ring-[#D4AF37]/30 transition-colors"
+            className="w-full bg-[#FBF3E0] border border-[#9E7016]/30 rounded-xl px-4 py-3 text-sm text-[#2A1408] placeholder:text-[#2A1408]/42 focus:border-[#C1102E]/60 focus:outline-none focus:ring-1 focus:ring-[#C1102E]/20 transition-colors"
           />
         </div>
       </div>
 
       <div className="space-y-1.5">
-        <label htmlFor="message" className="text-white/50 text-xs font-semibold tracking-wider uppercase">
+        <label htmlFor="message" className="text-[#2A1408]/50 text-xs font-semibold tracking-wider uppercase">
           Your Message / Question <span className="text-red-400">*</span>
         </label>
         <textarea
@@ -188,7 +188,7 @@ export default function ContactForm() {
           value={form.message}
           onChange={handleChange}
           placeholder="Describe your concern or question..."
-          className="w-full bg-white/5 border border-[#D4AF37]/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/42 focus:border-[#D4AF37]/60 focus:outline-none focus:ring-1 focus:ring-[#D4AF37]/30 transition-colors resize-none"
+          className="w-full bg-[#FBF3E0] border border-[#9E7016]/30 rounded-xl px-4 py-3 text-sm text-[#2A1408] placeholder:text-[#2A1408]/42 focus:border-[#C1102E]/60 focus:outline-none focus:ring-1 focus:ring-[#C1102E]/20 transition-colors resize-none"
         />
       </div>
 
@@ -201,7 +201,7 @@ export default function ContactForm() {
         {sending ? 'Sending...' : '📩 Submit Consultation Request'}
       </button>
 
-      <p className="text-white/42 text-[11px] text-center">
+      <p className="text-[#2A1408]/42 text-[11px] text-center">
         Your information is kept completely confidential. For Kundali reading, please provide accurate birth details.
       </p>
     </form>
