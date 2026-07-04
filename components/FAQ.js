@@ -51,19 +51,19 @@ export default function FAQ() {
   return (
     <section
       className="py-20 px-4 border-t border-[#D4AF37]/8"
-      style={{ background: 'linear-gradient(180deg, #0D0714 0%, #160A1C 100%)' }}
+      style={{ background: 'linear-gradient(180deg, #FBF3E0 0%, #FBF3E0 100%)' }}
       aria-labelledby="faq-heading"
     >
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-14">
           <p className="section-label mb-3">Common Questions</p>
           <h2 id="faq-heading"
-              className="text-3xl md:text-4xl font-bold text-white"
+              className="text-3xl md:text-4xl font-bold text-[#2A1408]"
               style={{ fontFamily: 'var(--font-cinzel)' }}>
-            Frequently Asked <span className="text-[#D4AF37]">Questions</span>
+            Frequently Asked <span className="text-[#9E7016]">Questions</span>
           </h2>
           <div className="gold-divider max-w-xs mx-auto mt-5">
-            <span className="text-[#D4AF37] text-lg shrink-0"
+            <span className="text-[#9E7016] text-lg shrink-0"
                   style={{ fontFamily: 'var(--font-devanagari)' }}>ॐ</span>
           </div>
         </div>
@@ -77,15 +77,15 @@ export default function FAQ() {
                            hover:bg-[#D4AF37]/5 transition-colors"
                 aria-expanded={open === i}
               >
-                <span className="text-white/85 font-medium text-sm pr-4">{item.q}</span>
-                <span className={`text-[#D4AF37] text-xl shrink-0 transition-transform duration-300
+                <span className="text-[#2A1408]/85 font-medium text-sm pr-4">{item.q}</span>
+                <span className={`text-[#9E7016] text-xl shrink-0 transition-transform duration-300
                                   ${open === i ? 'rotate-45' : ''}`}>
                   +
                 </span>
               </button>
               {open === i && (
                 <div className="px-5 pb-5">
-                  <p className="text-white/55 text-sm leading-relaxed border-t border-[#D4AF37]/10 pt-4">
+                  <p className="text-[#2A1408]/55 text-sm leading-relaxed border-t border-[#D4AF37]/10 pt-4">
                     {item.a}
                   </p>
                 </div>
