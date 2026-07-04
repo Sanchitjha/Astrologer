@@ -14,14 +14,14 @@ export default function Hero() {
       className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 pt-20 pb-16 overflow-hidden"
       aria-label="Welcome — Jyotish Shreenath Ji"
     >
-      {/* Background layers */}
-      <div className="absolute inset-0 bg-[#0D0714]" />
+      {/* Background layers — rich crimson glow fading into the cream section below */}
+      <div className="absolute inset-0 bg-[#7A0A1E]" />
       <div className="absolute inset-0"
-           style={{ background: 'radial-gradient(ellipse at 50% 0%, #520F26 0%, #0D0714 65%)' }} />
-      <div className="absolute inset-x-0 bottom-0 h-40"
-           style={{ background: 'linear-gradient(to bottom, transparent, #0D0714)' }} />
+           style={{ background: 'radial-gradient(ellipse at 50% 0%, #D11330 0%, #8A0A20 45%, #5A0715 100%)' }} />
+      <div className="absolute inset-x-0 bottom-0 h-48"
+           style={{ background: 'linear-gradient(to bottom, transparent, #FBF3E0)' }} />
 
-      <StarField count={65} />
+      <StarField count={55} />
 
       {/* Om watermark */}
       <div className="om-watermark" aria-hidden="true"
@@ -31,7 +31,7 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col items-center gap-6 max-w-4xl mx-auto w-full">
 
         {/* Welcome label */}
-        <p className="section-label animate-fade-in">— Best Astrologer in India —</p>
+        <p className="section-label section-label-gold animate-fade-in">— Best Astrologer in India —</p>
 
         {/* Main heading */}
         <div className="space-y-2 animate-fade-up">
@@ -40,7 +40,7 @@ export default function Hero() {
             <span className="text-white">Welcome to </span>
             <span className="text-gold-shimmer block mt-1">Jyotish Shreenath Ji</span>
           </h1>
-          <p className="text-[#D4AF37]/60 text-lg md:text-xl"
+          <p className="text-[#FFE9A8]/80 text-lg md:text-xl"
              style={{ fontFamily: 'var(--font-devanagari)' }}>
             ज्योतिष श्रीनाथ जी
           </p>
@@ -48,7 +48,7 @@ export default function Hero() {
 
         {/* Gold divider */}
         <div className="gold-divider w-full max-w-sm animate-fade-in delay-200">
-          <span className="text-[#D4AF37] text-2xl shrink-0"
+          <span className="text-[#FFE9A8] text-2xl shrink-0"
                 style={{ fontFamily: 'var(--font-devanagari)' }}>ॐ</span>
         </div>
 
@@ -56,9 +56,9 @@ export default function Hero() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full max-w-2xl animate-fade-up delay-300">
           {badges.map((b) => (
             <div key={b.label}
-                 className="glass-card rounded-xl px-3 py-3 flex flex-col items-center gap-1.5 text-center">
+                 className="glass-card-red rounded-xl px-3 py-3 flex flex-col items-center gap-1.5 text-center">
               <span className="text-2xl">{b.icon}</span>
-              <span className="text-white/75 text-xs leading-snug font-medium">{b.label}</span>
+              <span className="text-white/85 text-xs leading-snug font-medium">{b.label}</span>
             </div>
           ))}
         </div>
@@ -68,27 +68,27 @@ export default function Hero() {
           <Link href="/contact" className="btn-gold" style={{ fontFamily: 'var(--font-cinzel)' }}>
             📞 Book Consultation
           </Link>
-          <Link href="/services" className="btn-outline-gold" style={{ fontFamily: 'var(--font-cinzel)' }}>
+          <Link href="/services" className="btn-outline-cream" style={{ fontFamily: 'var(--font-cinzel)' }}>
             View All Services
           </Link>
         </div>
 
         {/* Sanskrit shloka */}
-        <div className="animate-fade-in delay-500 glass-card rounded-2xl px-6 py-4 max-w-lg">
-          <p className="text-[#D4AF37]/80 text-base leading-relaxed"
+        <div className="animate-fade-in delay-500 glass-card-red rounded-2xl px-6 py-4 max-w-lg">
+          <p className="text-[#FFE9A8]/90 text-base leading-relaxed"
              style={{ fontFamily: 'var(--font-devanagari)' }}>
             वक्र तुंड महाकाय, सूर्य कोटि समप्रभः ।
           </p>
-          <p className="text-[#D4AF37]/80 text-base leading-relaxed"
+          <p className="text-[#FFE9A8]/90 text-base leading-relaxed"
              style={{ fontFamily: 'var(--font-devanagari)' }}>
             निर्विघ्न कुरु मे देव शुभ कार्येषु सर्वदा ॥
           </p>
         </div>
 
         {/* Phone */}
-        <p className="text-white/48 text-xs animate-fade-in delay-500">
+        <p className="text-white/70 text-xs animate-fade-in delay-500">
           Rohit Sharmaji &nbsp;·&nbsp;{' '}
-          <a href="tel:7600010811" className="text-white/50 hover:text-[#D4AF37] transition-colors">
+          <a href="tel:7600010811" className="text-[#FFE9A8] hover:text-white transition-colors font-semibold">
             76000 10811
           </a>
           &nbsp;·&nbsp; Mon–Sat 9 AM–7 PM IST
@@ -97,10 +97,10 @@ export default function Hero() {
 
       {/* Scroll cue */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 animate-bounce">
-        <span className="text-[#D4AF37]/35 text-[10px] tracking-[0.3em] uppercase"
+        <span className="text-[#2A1408]/50 text-[10px] tracking-[0.3em] uppercase"
               style={{ fontFamily: 'var(--font-cinzel)' }}>Scroll</span>
         <div className="w-px h-7"
-             style={{ background: 'linear-gradient(to bottom, rgba(212,175,55,0.35), transparent)' }} />
+             style={{ background: 'linear-gradient(to bottom, rgba(122,10,30,0.4), transparent)' }} />
       </div>
     </section>
   );
