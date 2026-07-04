@@ -20,23 +20,23 @@ export default function ZodiacSigns() {
     <section
       id="zodiac"
       className="py-20 px-4 border-t border-[#D4AF37]/8 scroll-mt-24"
-      style={{ background: 'radial-gradient(ellipse at 50% 50%, #180B22 0%, #0D0714 80%)' }}
+      style={{ background: 'radial-gradient(ellipse at 50% 50%, #FBF3E0 0%, #FBF3E0 80%)' }}
       aria-labelledby="zodiac-heading"
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <p className="section-label mb-3">Astrology Predictions</p>
           <h2 id="zodiac-heading"
-              className="text-3xl md:text-4xl font-bold text-white"
+              className="text-3xl md:text-4xl font-bold text-[#2A1408]"
               style={{ fontFamily: 'var(--font-cinzel)' }}>
-            Zodiac Signs <span className="text-[#D4AF37]">Prediction</span>
+            Zodiac Signs <span className="text-[#9E7016]">Prediction</span>
           </h2>
-          <p className="text-white/58 text-sm mt-3 max-w-lg mx-auto">
+          <p className="text-[#2A1408]/58 text-sm mt-3 max-w-lg mx-auto">
             Select your zodiac sign to discover personalized predictions and cosmic guidance
             based on Vedic astrology.
           </p>
           <div className="gold-divider max-w-xs mx-auto mt-5">
-            <span className="text-[#D4AF37] text-lg shrink-0"
+            <span className="text-[#9E7016] text-lg shrink-0"
                   style={{ fontFamily: 'var(--font-devanagari)' }}>ॐ</span>
           </div>
         </div>
@@ -65,11 +65,11 @@ export default function ZodiacSigns() {
                 />
               </div>
               <div>
-                <p className="text-white/80 text-xs font-semibold"
+                <p className="text-[#2A1408]/80 text-xs font-semibold"
                    style={{ fontFamily: 'var(--font-cinzel)' }}>
                   {z.en}
                 </p>
-                <p className="text-white/52 text-xs mt-0.5"
+                <p className="text-[#2A1408]/52 text-xs mt-0.5"
                    style={{ fontFamily: 'var(--font-devanagari)' }}>
                   ({z.hi})
                 </p>
@@ -78,7 +78,7 @@ export default function ZodiacSigns() {
           ))}
         </div>
 
-        <p className="text-center text-white/42 text-xs mt-8">
+        <p className="text-center text-[#2A1408]/42 text-xs mt-8">
           Click any zodiac sign for detailed predictions and personalized guidance
         </p>
       </div>
