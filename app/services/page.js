@@ -72,7 +72,7 @@ export default function ServicesPage() {
         crumbs={[{ label: 'Services' }]}
       />
 
-      <main className="bg-[#0D0714] py-16 px-4">
+      <main className="bg-[#FBF3E0] py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {services.map((s) => (
@@ -83,21 +83,21 @@ export default function ServicesPage() {
                 <div className="flex items-center gap-4">
                   <span className="text-5xl">{s.icon}</span>
                   <div>
-                    <h2 className="text-[#D4AF37] font-bold text-lg leading-tight"
+                    <h2 className="text-[#9E7016] font-bold text-lg leading-tight"
                         style={{ fontFamily: 'var(--font-cinzel)' }}>
                       {s.label}
                     </h2>
-                    <p className="text-white/58 text-sm" style={{ fontFamily: 'var(--font-devanagari)' }}>
+                    <p className="text-[#2A1408]/58 text-sm" style={{ fontFamily: 'var(--font-devanagari)' }}>
                       {s.labelHindi}
                     </p>
                   </div>
                 </div>
-                <p className="text-white/60 text-sm leading-relaxed">{s.desc}</p>
+                <p className="text-[#2A1408]/60 text-sm leading-relaxed">{s.desc}</p>
                 <div className="flex flex-wrap gap-2">
                   {s.benefits.map((b) => (
                     <span
                       key={b}
-                      className="text-xs px-3 py-1 rounded-full border border-[#D4AF37]/25 text-[#D4AF37]/70"
+                      className="text-xs px-3 py-1 rounded-full border border-[#D4AF37]/25 text-[#9E7016]/70"
                     >
                       ✓ {b}
                     </span>
@@ -109,7 +109,7 @@ export default function ServicesPage() {
 
           {/* CTA */}
           <div className="mt-16 text-center">
-            <p className="text-white/58 mb-6 text-sm">
+            <p className="text-[#2A1408]/58 mb-6 text-sm">
               Ready to transform your life with Vedic wisdom?
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
