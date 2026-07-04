@@ -25,7 +25,7 @@ function Stars({ count }) {
   return (
     <span aria-label={`${count} out of 5 stars`} className="flex gap-0.5">
       {Array.from({ length: count }).map((_, i) => (
-        <span key={i} className="text-[#FFD700] text-base">★</span>
+        <span key={i} className="text-[#E0A81E] text-base">★</span>
       ))}
     </span>
   );
@@ -35,22 +35,22 @@ export default function Reviews() {
   return (
     <section
       className="py-20 px-4 border-t border-[#D4AF37]/8"
-      style={{ background: 'radial-gradient(ellipse at 50% 100%, #2C1608 0%, #0D0714 60%)' }}
+      style={{ background: 'radial-gradient(ellipse at 50% 100%, #F6ECD4 0%, #FBF3E0 60%)' }}
       aria-labelledby="reviews-heading"
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <p className="section-label mb-3">Client Reviews</p>
           <h2 id="reviews-heading"
-              className="text-3xl md:text-4xl font-bold text-white"
+              className="text-3xl md:text-4xl font-bold text-[#2A1408]"
               style={{ fontFamily: 'var(--font-cinzel)' }}>
-            What Our Clients <span className="text-[#D4AF37]">Say</span>
+            What Our Clients <span className="text-[#9E7016]">Say</span>
           </h2>
           <div className="gold-divider max-w-xs mx-auto mt-5">
-            <span className="text-[#D4AF37] text-lg shrink-0"
+            <span className="text-[#9E7016] text-lg shrink-0"
                   style={{ fontFamily: 'var(--font-devanagari)' }}>ॐ</span>
           </div>
-          <p className="text-white/50 text-sm mt-4 max-w-2xl mx-auto">
+          <p className="text-[#2A1408]/50 text-sm mt-4 max-w-2xl mx-auto">
             Read genuine reviews from clients who have experienced accurate astrology predictions,
             practical guidance, and positive changes in their lives.
           </p>
@@ -61,16 +61,16 @@ export default function Reviews() {
             <article key={r.name}
                      className="glass-card rounded-2xl p-7 flex flex-col gap-4">
               <Stars count={r.rating} />
-              <p className="text-white/65 text-sm leading-relaxed italic flex-1">
+              <p className="text-[#2A1408]/65 text-sm leading-relaxed italic flex-1">
                 &ldquo;{r.text}&rdquo;
               </p>
               <div className="flex items-center gap-3 pt-2 border-t border-[#D4AF37]/10">
                 <div className="w-9 h-9 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/30
-                                flex items-center justify-center text-[#D4AF37] font-black text-sm shrink-0"
+                                flex items-center justify-center text-[#9E7016] font-black text-sm shrink-0"
                      style={{ fontFamily: 'var(--font-cinzel)' }}>
                   {r.name[0]}
                 </div>
-                <p className="text-white font-semibold text-sm"
+                <p className="text-[#2A1408] font-semibold text-sm"
                    style={{ fontFamily: 'var(--font-cinzel)' }}>
                   {r.name}
                 </p>
