@@ -33,8 +33,8 @@ export default function Navbar() {
       aria-label="Main navigation"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-[#0D0714]/97 backdrop-blur-md border-b border-[#D4AF37]/20 shadow-[0_4px_30px_rgba(0,0,0,0.7)]'
-          : 'bg-[#180B22]/80 backdrop-blur-sm'
+          ? 'bg-[#2A0710]/97 backdrop-blur-md border-b border-[#D4AF37]/30 shadow-[0_4px_30px_rgba(90,7,21,0.4)]'
+          : 'bg-[#2A0710]/70 backdrop-blur-sm'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
@@ -106,7 +106,7 @@ export default function Navbar() {
 
       {/* Mobile Drawer */}
       <div className={`lg:hidden overflow-hidden transition-all duration-300 ${open ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
-        <div className="bg-[#0D0714]/98 backdrop-blur-xl border-t border-[#D4AF37]/15 px-4 py-4 flex flex-col gap-1">
+        <div className="bg-[#2A0710]/98 backdrop-blur-xl border-t border-[#D4AF37]/20 px-4 py-4 flex flex-col gap-1">
           {links.map((l) => {
             const active = pathname === l.href;
             return (
