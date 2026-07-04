@@ -25,19 +25,19 @@ export default function LoveProblems() {
   return (
     <section
       className="py-20 px-4 border-t border-[#D4AF37]/8"
-      style={{ background: 'radial-gradient(ellipse at 100% 50%, #2C0C16 0%, #0D0714 60%)' }}
+      style={{ background: 'radial-gradient(ellipse at 100% 50%, #FBF3E0 0%, #FBF3E0 60%)' }}
       aria-labelledby="love-heading"
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <p className="section-label mb-3">Love & Relationship</p>
           <h2 id="love-heading"
-              className="text-3xl md:text-4xl font-bold text-white"
+              className="text-3xl md:text-4xl font-bold text-[#2A1408]"
               style={{ fontFamily: 'var(--font-cinzel)' }}>
-            Love <span className="text-[#D4AF37]">Problem Solutions</span>
+            Love <span className="text-[#9E7016]">Problem Solutions</span>
           </h2>
           <div className="gold-divider max-w-xs mx-auto mt-5">
-            <span className="text-[#D4AF37] text-lg shrink-0"
+            <span className="text-[#9E7016] text-lg shrink-0"
                   style={{ fontFamily: 'var(--font-devanagari)' }}>ॐ</span>
           </div>
         </div>
@@ -51,15 +51,15 @@ export default function LoveProblems() {
                 <span className="text-3xl">{c.icon}</span>
               </div>
               <div className="flex-1">
-                <h3 className="text-[#D4AF37] font-bold text-lg mb-2"
+                <h3 className="text-[#9E7016] font-bold text-lg mb-2"
                     style={{ fontFamily: 'var(--font-cinzel)' }}>
                   {c.title}
                 </h3>
-                <p className="text-white/55 text-sm leading-relaxed">{c.desc}</p>
+                <p className="text-[#2A1408]/55 text-sm leading-relaxed">{c.desc}</p>
               </div>
               <Link href={c.href}
-                    className="inline-flex items-center gap-1 text-[#D4AF37] text-xs font-bold
-                               hover:text-[#FFD700] transition-colors mt-auto"
+                    className="inline-flex items-center gap-1 text-[#9E7016] text-xs font-bold
+                               hover:text-[#C1102E] transition-colors mt-auto"
                     style={{ fontFamily: 'var(--font-cinzel)' }}>
                 VIEW MORE <span className="text-base">→</span>
               </Link>
