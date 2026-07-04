@@ -5,7 +5,7 @@ export default function PageHeader({ title, titleHindi, subtitle, crumbs = [] })
   return (
     <section
       className="relative pt-32 pb-20 px-4 text-center overflow-hidden"
-      style={{ background: 'radial-gradient(ellipse at 50% 0%, #520F26 0%, #0D0714 70%)' }}
+      style={{ background: 'radial-gradient(ellipse at 50% 0%, #D11330 0%, #8A0A20 50%, #5A0715 100%)' }}
     >
       <StarField count={35} />
       <div className="om-watermark text-[12rem] opacity-[0.025]" aria-hidden="true"
@@ -39,7 +39,7 @@ export default function PageHeader({ title, titleHindi, subtitle, crumbs = [] })
       )}
 
       <div className="relative z-10 max-w-3xl mx-auto space-y-3">
-        <p className="section-label">— {subtitle} —</p>
+        <p className="section-label section-label-gold">— {subtitle} —</p>
 
         {titleHindi && (
           <h1
