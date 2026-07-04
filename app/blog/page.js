@@ -32,17 +32,17 @@ export default function BlogPage() {
         crumbs={[{ label: 'Blog' }]}
       />
 
-      <main className="bg-[#0D0714] py-16 px-4">
+      <main className="bg-[#FBF3E0] py-16 px-4">
         <div className="max-w-5xl mx-auto">
           {/* Coming soon message */}
           <div className="text-center mb-14">
             <div className="glass-card rounded-2xl p-10 max-w-2xl mx-auto space-y-4">
               <span className="text-5xl block">📝</span>
-              <h2 className="text-[#D4AF37] text-2xl font-bold"
+              <h2 className="text-[#9E7016] text-2xl font-bold"
                   style={{ fontFamily: 'var(--font-cinzel)' }}>
                 Blog Coming Soon
               </h2>
-              <p className="text-white/50 text-sm leading-relaxed max-w-md mx-auto">
+              <p className="text-[#2A1408]/50 text-sm leading-relaxed max-w-md mx-auto">
                 We are preparing insightful articles on Vedic astrology, horoscope predictions,
                 remedies, and spiritual guidance. Stay tuned!
               </p>
@@ -56,9 +56,9 @@ export default function BlogPage() {
           {/* Upcoming topics preview */}
           <div className="text-center mb-10">
             <p className="section-label mb-3">What to Expect</p>
-            <h3 className="text-2xl font-bold text-white"
+            <h3 className="text-2xl font-bold text-[#2A1408]"
                 style={{ fontFamily: 'var(--font-cinzel)' }}>
-              Upcoming <span className="text-[#D4AF37]">Topics</span>
+              Upcoming <span className="text-[#9E7016]">Topics</span>
             </h3>
           </div>
 
@@ -66,11 +66,11 @@ export default function BlogPage() {
             {upcomingTopics.map((t) => (
               <article key={t.title} className="glass-card rounded-2xl p-6 space-y-3">
                 <span className="text-3xl block">{t.icon}</span>
-                <h4 className="text-[#D4AF37] font-bold text-sm"
+                <h4 className="text-[#9E7016] font-bold text-sm"
                     style={{ fontFamily: 'var(--font-cinzel)' }}>
                   {t.title}
                 </h4>
-                <p className="text-white/50 text-xs leading-relaxed">{t.desc}</p>
+                <p className="text-[#2A1408]/50 text-xs leading-relaxed">{t.desc}</p>
               </article>
             ))}
           </div>
