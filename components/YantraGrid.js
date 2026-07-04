@@ -12,20 +12,20 @@ export default function YantraGrid({ preview = false }) {
   const shown = preview ? filtered.slice(0, 8) : filtered;
 
   return (
-    <section className="py-20 px-4" style={{ background: preview ? '#0D0714' : 'transparent' }}>
+    <section className="py-20 px-4" style={{ background: preview ? '#FBF3E0' : 'transparent' }}>
       <div className="max-w-7xl mx-auto">
 
         {preview && (
           <div className="text-center mb-12">
             <p className="section-label mb-3">Sacred Instruments</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: 'var(--font-cinzel)' }}>
-              Our <span className="text-[#D4AF37]">Yantra</span> Collection
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2A1408]" style={{ fontFamily: 'var(--font-cinzel)' }}>
+              Our <span className="text-[#9E7016]">Yantra</span> Collection
             </h2>
-            <p className="text-white/58 text-sm mt-3 max-w-xl mx-auto">
+            <p className="text-[#2A1408]/58 text-sm mt-3 max-w-xl mx-auto">
               Authentic, energised Yantras sourced from GemsMantra. Each yantra is consecrated with Vedic mantras.
             </p>
             <div className="gold-divider max-w-xs mx-auto mt-6">
-              <span className="text-[#D4AF37] text-lg shrink-0" style={{ fontFamily: 'var(--font-devanagari)' }}>ॐ</span>
+              <span className="text-[#9E7016] text-lg shrink-0" style={{ fontFamily: 'var(--font-devanagari)' }}>ॐ</span>
             </div>
           </div>
         )}
@@ -38,8 +38,8 @@ export default function YantraGrid({ preview = false }) {
               onClick={() => setActive(cat.key)}
               className={`px-4 py-2 rounded-full text-xs font-semibold border transition-all duration-200 ${
                 active === cat.key
-                  ? 'bg-[#D4AF37] text-[#0D0714] border-[#D4AF37] shadow-[0_0_15px_rgba(212,175,55,0.3)]'
-                  : 'bg-transparent text-white/55 border-white/15 hover:border-[#D4AF37]/50 hover:text-[#D4AF37]'
+                  ? 'bg-gradient-to-r from-[#C1102E] to-[#8A0A20] text-white border-[#C1102E] shadow-[0_4px_14px_rgba(193,16,46,0.35)]'
+                  : 'bg-white text-[#2A1408]/70 border-[#9E7016]/30 hover:border-[#C1102E]/50 hover:text-[#C1102E]'
               }`}
               style={{ fontFamily: 'var(--font-cinzel)' }}
             >
@@ -64,13 +64,13 @@ export default function YantraGrid({ preview = false }) {
           </div>
         )}
 
-        <p className="text-center text-white/38 text-xs mt-10">
+        <p className="text-center text-[#2A1408]/38 text-xs mt-10">
           Products powered by{' '}
           <a
             href="https://gemsmantra.com/collections/yantras"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline hover:text-[#D4AF37] transition-colors"
+            className="underline hover:text-[#9E7016] transition-colors"
           >
             GemsMantra.com
           </a>
