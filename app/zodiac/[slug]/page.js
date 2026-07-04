@@ -223,7 +223,7 @@ export default async function ZodiacSignPage({ params }) {
         ]}
       />
 
-      <section className="py-20 px-4" style={{ background: '#0D0714' }}>
+      <section className="py-20 px-4" style={{ background: '#FBF3E0' }}>
         <div className="max-w-5xl mx-auto space-y-8">
 
           {/* Main symbol + info */}
@@ -232,9 +232,9 @@ export default async function ZodiacSignPage({ params }) {
             <div className="glass-card rounded-2xl p-8 flex flex-col items-center text-center gap-4">
               <span className="text-8xl" style={{ color: z.color }}>{z.symbol}</span>
               <div>
-                <h2 className="text-2xl font-black text-white"
+                <h2 className="text-2xl font-black text-[#2A1408]"
                     style={{ fontFamily: 'var(--font-cinzel)' }}>{z.name}</h2>
-                <p className="text-[#D4AF37] text-xl mt-1"
+                <p className="text-[#9E7016] text-xl mt-1"
                    style={{ fontFamily: 'var(--font-devanagari)' }}>{z.hindi}</p>
               </div>
               <div className="w-full border-t border-[#D4AF37]/15 pt-4 space-y-2 text-sm text-left">
@@ -246,8 +246,8 @@ export default async function ZodiacSignPage({ params }) {
                   ['Lucky Stone', z.stone],
                 ].map(([k, v]) => (
                   <div key={k} className="flex justify-between gap-2">
-                    <span className="text-white/58">{k}</span>
-                    <span className="text-[#D4AF37]/80 font-medium text-right">{v}</span>
+                    <span className="text-[#2A1408]/58">{k}</span>
+                    <span className="text-[#9E7016]/80 font-medium text-right">{v}</span>
                   </div>
                 ))}
               </div>
@@ -256,18 +256,18 @@ export default async function ZodiacSignPage({ params }) {
             {/* Description + traits */}
             <div className="lg:col-span-2 space-y-6">
               <div className="glass-card rounded-2xl p-7">
-                <h3 className="text-[#D4AF37] font-bold mb-3"
+                <h3 className="text-[#9E7016] font-bold mb-3"
                     style={{ fontFamily: 'var(--font-cinzel)' }}>About {z.name}</h3>
-                <p className="text-white/65 text-sm leading-relaxed">{z.desc}</p>
+                <p className="text-[#2A1408]/65 text-sm leading-relaxed">{z.desc}</p>
               </div>
 
               <div className="glass-card rounded-2xl p-7">
-                <h3 className="text-[#D4AF37] font-bold mb-4"
+                <h3 className="text-[#9E7016] font-bold mb-4"
                     style={{ fontFamily: 'var(--font-cinzel)' }}>Key Traits</h3>
                 <div className="flex flex-wrap gap-2">
                   {z.traits.map((t) => (
                     <span key={t}
-                          className="px-3 py-1 rounded-full text-xs font-medium text-white/80
+                          className="px-3 py-1 rounded-full text-xs font-medium text-[#2A1408]/80
                                      border border-[#D4AF37]/25 bg-[#D4AF37]/5">
                       {t}
                     </span>
@@ -277,14 +277,14 @@ export default async function ZodiacSignPage({ params }) {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="glass-card rounded-2xl p-6">
-                  <h3 className="text-[#D4AF37] font-bold text-sm mb-2"
+                  <h3 className="text-[#9E7016] font-bold text-sm mb-2"
                       style={{ fontFamily: 'var(--font-cinzel)' }}>Career</h3>
-                  <p className="text-white/55 text-sm">{z.career}</p>
+                  <p className="text-[#2A1408]/55 text-sm">{z.career}</p>
                 </div>
                 <div className="glass-card rounded-2xl p-6">
-                  <h3 className="text-[#D4AF37] font-bold text-sm mb-2"
+                  <h3 className="text-[#9E7016] font-bold text-sm mb-2"
                       style={{ fontFamily: 'var(--font-cinzel)' }}>Love & Compatibility</h3>
-                  <p className="text-white/55 text-sm">{z.love}</p>
+                  <p className="text-[#2A1408]/55 text-sm">{z.love}</p>
                 </div>
               </div>
             </div>
