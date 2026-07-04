@@ -15,17 +15,17 @@ export default function Services({ preview = false }) {
   return (
     <section
       className="py-20 px-4 border-t border-[#D4AF37]/8"
-      style={{ background: 'radial-gradient(ellipse at 50% 100%, #180B22 0%, #0D0714 70%)' }}
+      style={{ background: 'radial-gradient(ellipse at 50% 100%, #FBF3E0 0%, #FBF3E0 70%)' }}
     >
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-12">
           <p className="section-label mb-3">What We Offer</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: 'var(--font-cinzel)' }}>
-            Our <span className="text-[#D4AF37]">Services</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2A1408]" style={{ fontFamily: 'var(--font-cinzel)' }}>
+            Our <span className="text-[#9E7016]">Services</span>
           </h2>
           <div className="gold-divider max-w-xs mx-auto mt-5">
-            <span className="text-[#D4AF37] text-lg shrink-0" style={{ fontFamily: 'var(--font-devanagari)' }}>ॐ</span>
+            <span className="text-[#9E7016] text-lg shrink-0" style={{ fontFamily: 'var(--font-devanagari)' }}>ॐ</span>
           </div>
         </div>
 
@@ -35,15 +35,15 @@ export default function Services({ preview = false }) {
             <div key={s.label} className="glass-card rounded-2xl p-6 space-y-3 group">
               <span className="text-4xl block group-hover:scale-110 transition-transform duration-300">{s.icon}</span>
               <div>
-                <h3 className="text-[#D4AF37] font-bold text-base"
+                <h3 className="text-[#9E7016] font-bold text-base"
                     style={{ fontFamily: 'var(--font-cinzel)' }}>
                   {s.label}
                 </h3>
-                <p className="text-white/52 text-xs" style={{ fontFamily: 'var(--font-devanagari)' }}>
+                <p className="text-[#2A1408]/52 text-xs" style={{ fontFamily: 'var(--font-devanagari)' }}>
                   {s.labelHindi}
                 </p>
               </div>
-              <p className="text-white/55 text-sm leading-relaxed">{s.desc}</p>
+              <p className="text-[#2A1408]/55 text-sm leading-relaxed">{s.desc}</p>
             </div>
           ))}
         </div>
