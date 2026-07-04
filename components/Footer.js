@@ -20,7 +20,7 @@ export default function Footer() {
   return (
     <footer
       className="border-t border-[#D4AF37]/15 pt-14 pb-6 px-4 mt-auto"
-      style={{ background: 'linear-gradient(180deg, #12081A 0%, #0C0616 100%)' }}
+      style={{ background: 'linear-gradient(180deg, #3A0710 0%, #1E0509 100%)' }}
       role="contentinfo"
     >
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
