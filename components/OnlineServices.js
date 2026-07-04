@@ -43,7 +43,7 @@ export default function OnlineServices() {
   return (
     <section
       className="py-20 px-4 border-t border-[#D4AF37]/8"
-      style={{ background: 'radial-gradient(ellipse at 50% 100%, #180B22 0%, #0D0714 70%)' }}
+      style={{ background: 'radial-gradient(ellipse at 50% 100%, #FBF3E0 0%, #FBF3E0 70%)' }}
       aria-labelledby="services-heading"
     >
       <div className="max-w-6xl mx-auto">
@@ -51,16 +51,16 @@ export default function OnlineServices() {
         <div className="text-center mb-12">
           <p className="section-label mb-3">What We Offer</p>
           <h2 id="services-heading"
-              className="text-3xl md:text-4xl font-bold text-white"
+              className="text-3xl md:text-4xl font-bold text-[#2A1408]"
               style={{ fontFamily: 'var(--font-cinzel)' }}>
-            Our Online <span className="text-[#D4AF37]">Astrology Services</span>
+            Our Online <span className="text-[#9E7016]">Astrology Services</span>
           </h2>
-          <p className="text-white/45 text-sm mt-3 max-w-xl mx-auto">
+          <p className="text-[#2A1408]/45 text-sm mt-3 max-w-xl mx-auto">
             Each consultation is personally conducted by Rohit Sharma through Zoom, WhatsApp, or
             Phone, providing accurate astrological guidance and practical solutions for every stage of life.
           </p>
           <div className="gold-divider max-w-xs mx-auto mt-5">
-            <span className="text-[#D4AF37] text-lg shrink-0"
+            <span className="text-[#9E7016] text-lg shrink-0"
                   style={{ fontFamily: 'var(--font-devanagari)' }}>ॐ</span>
           </div>
         </div>
@@ -79,16 +79,16 @@ export default function OnlineServices() {
               </div>
 
               <div>
-                <h3 className="text-[#D4AF37] font-bold text-base"
+                <h3 className="text-[#9E7016] font-bold text-base"
                     style={{ fontFamily: 'var(--font-cinzel)' }}>
                   {s.title}
                 </h3>
-                <p className="text-white/48 text-xs mt-0.5"
+                <p className="text-[#2A1408]/48 text-xs mt-0.5"
                    style={{ fontFamily: 'var(--font-devanagari)' }}>
                   {s.titleHindi}
                 </p>
               </div>
-              <p className="text-white/55 text-sm leading-relaxed">{s.desc}</p>
+              <p className="text-[#2A1408]/55 text-sm leading-relaxed">{s.desc}</p>
             </article>
           ))}
         </div>
