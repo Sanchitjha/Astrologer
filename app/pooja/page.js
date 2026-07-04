@@ -82,15 +82,15 @@ export default function PoojaPage() {
         crumbs={[{ label: 'Pooja' }]}
       />
 
-      <section className="py-20 px-4" style={{ background: '#0D0714' }}>
+      <section className="py-20 px-4" style={{ background: '#FBF3E0' }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <p className="section-label mb-3">Sacred Rituals</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-white"
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2A1408]"
                 style={{ fontFamily: 'var(--font-cinzel)' }}>
-              Our Pooja <span className="text-[#D4AF37]">Services</span>
+              Our Pooja <span className="text-[#9E7016]">Services</span>
             </h2>
-            <p className="text-white/50 text-sm mt-4 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-[#2A1408]/50 text-sm mt-4 max-w-2xl mx-auto leading-relaxed">
               All poojas are conducted following authentic Vedic rituals by experienced pandits.
               Available at your location or performed on your behalf at sacred temples across India.
             </p>
@@ -101,28 +101,28 @@ export default function PoojaPage() {
               <div key={p.title} className="glass-card rounded-2xl p-7 flex flex-col gap-3 group">
                 <div className="flex items-start justify-between">
                   <span className="text-4xl">{p.icon}</span>
-                  <span className="text-xs text-[#D4AF37]/60 border border-[#D4AF37]/20 rounded-full
+                  <span className="text-xs text-[#9E7016]/60 border border-[#D4AF37]/20 rounded-full
                                    px-3 py-1 shrink-0"
                         style={{ fontFamily: 'var(--font-cinzel)' }}>
                     {p.duration}
                   </span>
                 </div>
-                <h3 className="text-[#D4AF37] font-bold"
+                <h3 className="text-[#9E7016] font-bold"
                     style={{ fontFamily: 'var(--font-cinzel)' }}>
                   {p.title}
                 </h3>
-                <p className="text-white/55 text-sm leading-relaxed flex-1">{p.desc}</p>
+                <p className="text-[#2A1408]/55 text-sm leading-relaxed flex-1">{p.desc}</p>
               </div>
             ))}
           </div>
 
           {/* How to book */}
           <div className="glass-card rounded-2xl p-8 mt-12 text-center">
-            <h3 className="text-[#D4AF37] font-bold text-xl mb-3"
+            <h3 className="text-[#9E7016] font-bold text-xl mb-3"
                 style={{ fontFamily: 'var(--font-cinzel)' }}>
               How to Book a Pooja
             </h3>
-            <p className="text-white/55 text-sm leading-relaxed max-w-xl mx-auto mb-6">
+            <p className="text-[#2A1408]/55 text-sm leading-relaxed max-w-xl mx-auto mb-6">
               Contact us with your preferred pooja, date, and location. Our team will prepare
               a complete list of required samagri (materials) and guide you through the process.
             </p>
