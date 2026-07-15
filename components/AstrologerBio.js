@@ -31,22 +31,29 @@ export default function AstrologerBio() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image */}
           <div className="flex justify-center order-last lg:order-first">
-            <div className="relative">
-              <div className="absolute -inset-5 rounded-full border border-dashed border-[#D4AF37]/20 spin-slow"
-                   aria-hidden="true" />
-              <div className="w-60 h-60 md:w-72 md:h-72 rounded-full ring-4 ring-[#D4AF37]/30
-                              overflow-hidden bg-[#FBF3E0] p-4
-                              shadow-[0_0_60px_rgba(212,175,55,0.12)]">
+            <div className="relative w-full max-w-sm">
+              {/* Soft ambient glow behind the frame */}
+              <div className="absolute -inset-6 rounded-[2rem] bg-[#C9962B]/15 blur-2xl" aria-hidden="true" />
+
+              <div className="relative rounded-[1.75rem] ring-1 ring-[#D4AF37]/30
+                              overflow-hidden shadow-[0_20px_60px_rgba(122,40,10,0.18)]">
                 <Image
-                  src="/logo.jpg"
-                  alt="Rohit Sharmaji — Best Online Astrologer in India"
-                  width={288}
-                  height={288}
-                  className="w-full h-full object-contain rounded-full"
+                  src="/shreenath.jpeg"
+                  alt="Shrinathji — Jyotish Shreenath Ji"
+                  width={520}
+                  height={580}
+                  className="w-full h-auto object-cover"
+                  style={{ filter: 'saturate(0.82) brightness(0.96) contrast(0.96)' }}
+                  priority
                 />
+                {/* Soft cream/gold wash so the artwork sits quietly rather than shouting */}
+                <div className="absolute inset-0 pointer-events-none"
+                     style={{ background: 'linear-gradient(180deg, rgba(251,243,224,0.16) 0%, rgba(251,243,224,0) 30%, rgba(251,243,224,0) 70%, rgba(122,40,10,0.14) 100%)' }} />
+                <div className="absolute inset-0 pointer-events-none ring-1 ring-inset ring-[#C9962B]/25 rounded-[1.75rem]" />
               </div>
+
               {/* Experience badge */}
-              <div className="absolute -bottom-2 -right-2 glass-card rounded-2xl px-4 py-2 text-center border-[#D4AF37]/40">
+              <div className="absolute -bottom-4 -right-4 glass-card rounded-2xl px-4 py-2 text-center border-[#D4AF37]/40">
                 <p className="text-[#C1102E] text-xl font-black"
                    style={{ fontFamily: 'var(--font-cinzel)' }}>20+</p>
                 <p className="text-[#2A1408]/50 text-[10px]">Years Exp.</p>
