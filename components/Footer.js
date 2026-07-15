@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const quickLinks = [
   { label: 'Home', href: '/' },
@@ -27,10 +28,20 @@ export default function Footer() {
 
         {/* Column 1 — Logo & About Us */}
         <div className="space-y-4">
-          <Link href="/" aria-label="Jyotish Shreenath Ji Home">
-            <p className="text-[#D4AF37] font-black text-xl"
+          <Link href="/" aria-label="Jyotish Shreenath Ji Home" className="flex items-center gap-2.5">
+            <div className="relative w-10 h-10 shrink-0">
+              <div className="absolute inset-0 rounded-full ring-2 ring-[#D4AF37]/50" />
+              <Image
+                src="/logo.jpg"
+                alt="Jyotish Shreenath Ji logo"
+                width={40}
+                height={40}
+                className="w-10 h-10 rounded-full object-cover"
+              />
+            </div>
+            <p className="text-[#D4AF37] font-black text-base whitespace-nowrap"
                style={{ fontFamily: 'var(--font-cinzel)' }}>
-              🕉️ Jyotish Shreenath Ji
+              Jyotish Shreenath Ji
             </p>
           </Link>
           <p className="text-white/58 text-sm leading-relaxed">
