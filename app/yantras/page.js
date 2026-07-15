@@ -1,5 +1,7 @@
 import PageHeader from '@/components/PageHeader';
 import YantraGrid from '@/components/YantraGrid';
+import { yantras } from '@/data/yantras';
+import { findPublicImage } from '@/lib/publicImage';
 
 export const metadata = {
   title: 'Sacred Yantras Collection — Buy Authentic Yantras Online',
@@ -18,6 +20,8 @@ export const metadata = {
 };
 
 export default function YantrasPage() {
+  const yantrasWithPhotos = yantras.map((y) => ({ ...y, photo: findPublicImage('yantras', y.slug) }));
+
   return (
     <>
       <PageHeader
@@ -26,7 +30,7 @@ export default function YantrasPage() {
         subtitle="Sacred Instruments"
         crumbs={[{ label: 'Yantras' }]}
       />
-      <YantraGrid />
+      <YantraGrid yantras={yantrasWithPhotos} />
     </>
   );
 }
