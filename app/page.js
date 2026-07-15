@@ -11,6 +11,8 @@ import Reviews from '@/components/Reviews';
 import FAQ from '@/components/FAQ';
 import YantraGrid from '@/components/YantraGrid';
 import ContactCTA from '@/components/ContactCTA';
+import { yantras } from '@/data/yantras';
+import { findPublicImage } from '@/lib/publicImage';
 
 export const metadata = {
   title: 'Jyotish Shreenath Ji | Best Astrologer in India — Rohit Sharma',
@@ -46,6 +48,8 @@ export const metadata = {
 };
 
 export default function HomePage() {
+  const yantrasWithPhotos = yantras.map((y) => ({ ...y, photo: findPublicImage('yantras', y.slug) }));
+
   return (
     <>
       {/* Section 2 — Hero Banner */}
@@ -82,7 +86,7 @@ export default function HomePage() {
       <FAQ />
 
       {/* Bonus — Yantra Collection preview */}
-      <YantraGrid preview />
+      <YantraGrid preview yantras={yantrasWithPhotos} />
 
       {/* Contact CTA */}
       <ContactCTA />
