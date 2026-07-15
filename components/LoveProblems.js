@@ -54,13 +54,14 @@ export default function LoveProblems() {
             <article key={c.title}
                      className="glass-card rounded-2xl p-7 flex flex-col gap-4 group overflow-hidden">
               {photo ? (
-                <div className="relative w-full h-36 rounded-2xl overflow-hidden -mt-1 -mx-1">
+                <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden -mt-1 -mx-1
+                                bg-gradient-to-br from-[#F6ECD4] to-[#FBF3E0]">
                   <Image
                     src={photo}
                     alt={c.title}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-contain transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
               ) : (

@@ -68,14 +68,9 @@ export default function ZodiacSigns() {
                     className="object-cover"
                   />
                 ) : (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    src={`/zodiac/${z.slug}.svg`}
-                    alt={`${z.en} zodiac sign`}
-                    width={48}
-                    height={48}
-                    className="w-10 h-10 md:w-12 md:h-12 object-contain"
-                  />
+                  <span className="text-3xl md:text-4xl" style={{ color: z.color }} aria-hidden="true">
+                    {z.sign}
+                  </span>
                 )}
               </div>
               <div>
