@@ -1,6 +1,7 @@
 import PageHeader from '@/components/PageHeader';
 import ContactForm from '@/components/ContactForm';
-import { Phone, MessageCircle, Clock, MapPin } from 'lucide-react';
+import { WhatsAppIcon } from '@/components/FloatingWhatsApp';
+import { Phone, Clock, MapPin } from 'lucide-react';
 
 export const metadata = {
   title: 'Contact — Book Consultation with Rohit Sharmaji',
@@ -93,8 +94,9 @@ export default function ContactPage() {
                 rel="noopener noreferrer"
                 className="group glass-card rounded-2xl p-8 flex flex-col items-center gap-5 text-center transition-all hover:border-green-500/40 hover:shadow-[0_0_30px_rgba(37,211,102,0.1)] flex-1"
               >
-                <div className="w-16 h-16 rounded-full bg-green-500/10 flex items-center justify-center pulse-gold group-hover:bg-green-500/20 transition-colors">
-                  <MessageCircle className="text-green-400" size={28} />
+                <div className="w-16 h-16 rounded-full flex items-center justify-center pulse-gold text-white transition-colors"
+                     style={{ background: '#25D366' }}>
+                  <WhatsAppIcon size={32} />
                 </div>
                 <div>
                   <p className="text-[#2A1408]/50 text-xs mb-1 section-label">WhatsApp</p>
