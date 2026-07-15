@@ -1,7 +1,9 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { yantras } from '@/data/yantras';
 import { formatINR } from '@/lib/utils';
+import { findPublicImage } from '@/lib/publicImage';
 import PageHeader from '@/components/PageHeader';
 
 export async function generateStaticParams() {
@@ -28,6 +30,7 @@ export default function YantraDetailPage({ params }) {
   if (!yantra) notFound();
 
   const related = yantras.filter((y) => y.category === yantra.category && y.id !== yantra.id).slice(0, 3);
+  const photo = findPublicImage('yantras', yantra.slug);
 
   return (
     <>
@@ -42,15 +45,26 @@ export default function YantraDetailPage({ params }) {
 
           {/* Main card */}
           <div className="glass-card rounded-3xl p-8 md:p-12 grid md:grid-cols-2 gap-10 items-center">
-            {/* Symbol */}
+            {/* Product image */}
             <div
-              className="flex items-center justify-center h-56 md:h-72 rounded-2xl"
-              style={{ background: 'linear-gradient(135deg, rgba(212,175,55,0.08), rgba(204,0,0,0.06))' }}
+              className="relative flex items-center justify-center h-56 md:h-72 rounded-2xl overflow-hidden"
+              style={{ background: photo ? undefined : 'linear-gradient(135deg, rgba(212,175,55,0.08), rgba(204,0,0,0.06))' }}
             >
-              <span className="text-8xl md:text-9xl text-[#9E7016]/50 float-anim select-none"
-                    aria-hidden="true" style={{ fontFamily: 'var(--font-devanagari)' }}>
-                ॐ
-              </span>
+              {photo ? (
+                <Image
+                  src={photo}
+                  alt={yantra.name}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                  priority
+                />
+              ) : (
+                <span className="text-8xl md:text-9xl text-[#9E7016]/50 float-anim select-none"
+                      aria-hidden="true" style={{ fontFamily: 'var(--font-devanagari)' }}>
+                  ॐ
+                </span>
+              )}
             </div>
 
             {/* Info */}
@@ -113,18 +127,27 @@ export default function YantraDetailPage({ params }) {
                 Related Yantras
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                {related.map((r) => (
-                  <Link
-                    key={r.id}
-                    href={`/yantras/${r.slug}`}
-                    className="glass-card rounded-xl p-4 text-center space-y-2 hover:border-[#D4AF37]/50 transition-all"
-                  >
-                    <span className="text-3xl text-[#9E7016]/50 block"
-                          style={{ fontFamily: 'var(--font-devanagari)' }}>ॐ</span>
-                    <p className="text-[#2A1408]/75 text-xs leading-snug line-clamp-2">{r.name}</p>
-                    <p className="text-[#C1102E] font-bold text-sm">{formatINR(r.salePrice)}</p>
-                  </Link>
-                ))}
+                {related.map((r) => {
+                  const rPhoto = findPublicImage('yantras', r.slug);
+                  return (
+                    <Link
+                      key={r.id}
+                      href={`/yantras/${r.slug}`}
+                      className="glass-card rounded-xl p-4 text-center space-y-2 hover:border-[#D4AF37]/50 transition-all"
+                    >
+                      {rPhoto ? (
+                        <div className="relative w-14 h-14 mx-auto rounded-lg overflow-hidden">
+                          <Image src={rPhoto} alt={r.name} fill sizes="56px" className="object-cover" />
+                        </div>
+                      ) : (
+                        <span className="text-3xl text-[#9E7016]/50 block"
+                              style={{ fontFamily: 'var(--font-devanagari)' }}>ॐ</span>
+                      )}
+                      <p className="text-[#2A1408]/75 text-xs leading-snug line-clamp-2">{r.name}</p>
+                      <p className="text-[#C1102E] font-bold text-sm">{formatINR(r.salePrice)}</p>
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           )}
