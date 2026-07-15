@@ -1,4 +1,5 @@
-import { Phone, MessageCircle } from 'lucide-react';
+import { Phone } from 'lucide-react';
+import { WhatsAppIcon } from '@/components/FloatingWhatsApp';
 
 export default function ContactCTA() {
   return (
@@ -40,8 +41,9 @@ export default function ContactCTA() {
             rel="noopener noreferrer"
             className="glass-card-red rounded-2xl p-5 flex items-center gap-4 transition-all group"
           >
-            <div className="w-12 h-12 rounded-xl bg-green-400/20 flex items-center justify-center group-hover:bg-green-400/30 transition-colors shrink-0">
-              <MessageCircle className="text-green-300" size={22} />
+            <div className="w-12 h-12 rounded-xl flex items-center justify-center text-white transition-colors shrink-0"
+                 style={{ background: '#25D366' }}>
+              <WhatsAppIcon size={26} />
             </div>
             <div className="text-left">
               <p className="text-white/70 text-xs mb-0.5">WhatsApp</p>
