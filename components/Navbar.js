@@ -33,7 +33,7 @@ export default function Navbar() {
       aria-label="Main navigation"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-[#2A0710]/97 backdrop-blur-md border-b border-[#D4AF37]/30 shadow-[0_4px_30px_rgba(90,7,21,0.4)]'
+          ? 'bg-[#2A0710]/97 backdrop-blur-md border-b border-[#D4AF37]/30'
           : 'bg-[#2A0710]/70 backdrop-blur-sm'
       }`}
     >
