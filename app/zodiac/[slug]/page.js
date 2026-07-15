@@ -1,7 +1,9 @@
 import PageHeader from '@/components/PageHeader';
 import ContactCTA from '@/components/ContactCTA';
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
+import { findPublicImage } from '@/lib/publicImage';
 
 const zodiacData = {
   aries: {
@@ -210,6 +212,7 @@ export default async function ZodiacSignPage({ params }) {
   const currentIdx = allSlugs.indexOf(slug);
   const prev = allSlugs[currentIdx - 1];
   const next = allSlugs[currentIdx + 1];
+  const photo = findPublicImage('zodiac', slug);
 
   return (
     <>
@@ -230,7 +233,13 @@ export default async function ZodiacSignPage({ params }) {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {/* Symbol card */}
             <div className="glass-card rounded-2xl p-8 flex flex-col items-center text-center gap-4">
-              <span className="text-8xl" style={{ color: z.color }}>{z.symbol}</span>
+              {photo ? (
+                <div className="relative w-40 h-40 rounded-full overflow-hidden ring-4 ring-[#D4AF37]/30 shadow-[0_8px_28px_rgba(122,40,10,0.15)]">
+                  <Image src={photo} alt={`${z.name} zodiac sign`} fill sizes="160px" className="object-cover" />
+                </div>
+              ) : (
+                <span className="text-8xl" style={{ color: z.color }}>{z.symbol}</span>
+              )}
               <div>
                 <h2 className="text-2xl font-black text-[#2A1408]"
                     style={{ fontFamily: 'var(--font-cinzel)' }}>{z.name}</h2>
