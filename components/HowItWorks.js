@@ -51,19 +51,28 @@ export default function HowItWorks() {
         </div>
 
         <div className="relative">
-          <div className="hidden lg:block absolute top-14 left-[12.5%] right-[12.5%] h-px bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Connector line with traveling gradient */}
+          <div className="hidden lg:block absolute top-14 left-[12.5%] right-[12.5%] h-[3px] rounded-full overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-r from-[#C9962B]/20 via-[#C9962B]/60 to-[#C1102E]/20" />
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
             {steps.map((s) => (
               <div key={s.num} className="relative flex flex-col items-center text-center gap-4 group">
-                <div className="relative w-24 h-24 rounded-full border-2 border-[#D4AF37]/30
-                                bg-[#D4AF37]/5 flex items-center justify-center
-                                group-hover:border-[#D4AF37]/70 group-hover:bg-[#D4AF37]/10
-                                transition-all duration-300">
-                  <span className="text-3xl">{s.icon}</span>
-                  <span className="absolute -top-2 -right-2 w-7 h-7 rounded-full
-                                   bg-[#D4AF37] text-[#FBF3E0] text-xs font-black
-                                   flex items-center justify-center"
-                        style={{ fontFamily: 'var(--font-cinzel)' }}>
+                <div className="relative w-24 h-24 rounded-full flex items-center justify-center
+                                transition-all duration-300 group-hover:-translate-y-1
+                                shadow-[0_8px_24px_rgba(122,40,10,0.10)]
+                                group-hover:shadow-[0_12px_30px_rgba(193,16,46,0.18)]"
+                     style={{ background: 'radial-gradient(circle, rgba(201,150,43,0.14) 0%, rgba(251,243,224,1) 72%)' }}>
+                  <div className="absolute inset-0 rounded-full ring-2 ring-[#D4AF37]/35
+                                  group-hover:ring-[#C1102E]/45 transition-colors duration-300" />
+                  <span className="text-3xl relative z-10 group-hover:scale-110 transition-transform duration-300">
+                    {s.icon}
+                  </span>
+                  <span className="absolute -top-2 -right-1 w-8 h-8 rounded-full
+                                   flex items-center justify-center text-xs font-black text-white
+                                   shadow-[0_3px_10px_rgba(193,16,46,0.4)] ring-2 ring-[#FBF3E0]"
+                        style={{ background: 'linear-gradient(135deg, #E9C349, #C9962B)', fontFamily: 'var(--font-cinzel)', color: '#3A2408' }}>
                     {s.num}
                   </span>
                 </div>

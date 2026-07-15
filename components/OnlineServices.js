@@ -66,19 +66,35 @@ export default function OnlineServices() {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((s) => (
-            <article key={s.title} className="glass-card rounded-2xl p-6 space-y-3 group">
-              {/* Geometric circle decoration */}
-              <div className="relative h-20 flex items-center justify-center mb-2">
-                <div className="absolute w-16 h-16 rounded-full border border-[#D4AF37]/20
-                                group-hover:border-[#D4AF37]/50 transition-colors" />
-                <div className="absolute w-12 h-12 rounded-full border border-[#D4AF37]/10
-                                group-hover:border-[#D4AF37]/30 transition-colors" />
-                <span className="text-4xl relative z-10">{s.icon}</span>
+            <article
+              key={s.title}
+              className="relative rounded-2xl p-6 space-y-3 group bg-white overflow-hidden
+                         border border-[#D4AF37]/25 shadow-[0_4px_18px_rgba(122,40,10,0.06)]
+                         transition-all duration-300
+                         hover:-translate-y-1.5 hover:shadow-[0_16px_38px_rgba(193,16,46,0.14)]
+                         hover:border-[#C1102E]/30"
+            >
+              {/* Top accent bar */}
+              <div className="absolute top-0 left-0 right-0 h-1
+                              bg-gradient-to-r from-[#C9962B] via-[#F0C64B] to-[#C1102E]
+                              scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
+
+              {/* Icon badge */}
+              <div className="relative w-20 h-20 mx-auto mb-1 flex items-center justify-center">
+                <div className="absolute inset-0 rounded-full"
+                     style={{ background: 'radial-gradient(circle, rgba(201,150,43,0.16) 0%, rgba(193,16,46,0.06) 100%)' }} />
+                <div className="absolute inset-1.5 rounded-full ring-2 ring-[#D4AF37]/30
+                                group-hover:ring-[#C1102E]/40 transition-all duration-300
+                                shadow-[inset_0_1px_4px_rgba(122,40,10,0.08)]" />
+                <span className="text-4xl relative z-10 transition-transform duration-300
+                                  group-hover:scale-110 drop-shadow-sm">
+                  {s.icon}
+                </span>
               </div>
 
-              <div>
+              <div className="text-center">
                 <h3 className="text-[#9E7016] font-bold text-base"
                     style={{ fontFamily: 'var(--font-cinzel)' }}>
                   {s.title}
@@ -88,7 +104,7 @@ export default function OnlineServices() {
                   {s.titleHindi}
                 </p>
               </div>
-              <p className="text-[#2A1408]/55 text-sm leading-relaxed">{s.desc}</p>
+              <p className="text-[#2A1408]/55 text-sm leading-relaxed text-center">{s.desc}</p>
             </article>
           ))}
         </div>

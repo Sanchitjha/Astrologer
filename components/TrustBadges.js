@@ -35,10 +35,29 @@ export default function TrustBadges() {
       <div className="max-w-6xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
         {badges.map((b) => (
           <div key={b.label}
-               className="glass-card rounded-2xl p-6 flex flex-col items-center text-center gap-3 group">
-            <span className="text-4xl">{b.icon}</span>
+               className="relative rounded-2xl p-6 flex flex-col items-center text-center gap-3 group
+                          bg-white border border-[#D4AF37]/25 overflow-hidden
+                          shadow-[0_4px_18px_rgba(122,40,10,0.06)] transition-all duration-300
+                          hover:-translate-y-1.5 hover:shadow-[0_16px_38px_rgba(193,16,46,0.14)]
+                          hover:border-[#C1102E]/30">
+            {/* Top accent bar */}
+            <div className="absolute top-0 left-0 right-0 h-1
+                            bg-gradient-to-r from-[#C9962B] via-[#F0C64B] to-[#C1102E]
+                            scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
+
+            {/* Icon badge */}
+            <div className="relative w-16 h-16 flex items-center justify-center">
+              <div className="absolute inset-0 rounded-full"
+                   style={{ background: 'radial-gradient(circle, rgba(201,150,43,0.18) 0%, rgba(193,16,46,0.06) 100%)' }} />
+              <div className="absolute inset-1 rounded-full ring-2 ring-[#D4AF37]/30
+                              group-hover:ring-[#C1102E]/40 transition-all duration-300" />
+              <span className="text-3xl relative z-10 transition-transform duration-300 group-hover:scale-110">
+                {b.icon}
+              </span>
+            </div>
+
             <div>
-              <p className="text-2xl md:text-3xl font-black text-[#9E7016]"
+              <p className="text-2xl md:text-3xl font-black text-gold-shimmer"
                  style={{ fontFamily: 'var(--font-cinzel)' }}>
                 {b.stat}
               </p>
