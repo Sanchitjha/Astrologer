@@ -2,10 +2,10 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { yantras, categories } from '@/data/yantras';
+import { categories } from '@/data/yantras';
 import YantraCard from './YantraCard';
 
-export default function YantraGrid({ preview = false }) {
+export default function YantraGrid({ yantras, preview = false }) {
   const [active, setActive] = useState('all');
 
   const filtered = active === 'all' ? yantras : yantras.filter((y) => y.category === active);
