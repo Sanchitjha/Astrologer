@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import { findPublicImage } from '@/lib/publicImage';
 
 const zodiacs = [
   { sign: '♈', en: 'Aries',       hi: 'मेष',      slug: 'aries',       color: '#FF6B6B' },
@@ -42,7 +44,9 @@ export default function ZodiacSigns() {
         </div>
 
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
-          {zodiacs.map((z) => (
+          {zodiacs.map((z) => {
+            const photo = findPublicImage('zodiac', z.slug);
+            return (
             <Link
               key={z.slug}
               href={`/zodiac/${z.slug}`}
@@ -52,17 +56,27 @@ export default function ZodiacSigns() {
               aria-label={`${z.en} zodiac prediction`}
             >
               <div
-                className="w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
+                className="relative w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
                 style={{ background: `radial-gradient(circle, ${z.color}15, ${z.color}05)`, border: `1px solid ${z.color}30` }}
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={`/zodiac/${z.slug}.svg`}
-                  alt={`${z.en} zodiac sign`}
-                  width={48}
-                  height={48}
-                  className="w-10 h-10 md:w-12 md:h-12 object-contain"
-                />
+                {photo ? (
+                  <Image
+                    src={photo}
+                    alt={`${z.en} zodiac sign`}
+                    fill
+                    sizes="80px"
+                    className="object-cover"
+                  />
+                ) : (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={`/zodiac/${z.slug}.svg`}
+                    alt={`${z.en} zodiac sign`}
+                    width={48}
+                    height={48}
+                    className="w-10 h-10 md:w-12 md:h-12 object-contain"
+                  />
+                )}
               </div>
               <div>
                 <p className="text-[#2A1408]/80 text-xs font-semibold"
@@ -75,7 +89,8 @@ export default function ZodiacSigns() {
                 </p>
               </div>
             </Link>
-          ))}
+            );
+          })}
         </div>
 
         <p className="text-center text-[#2A1408]/42 text-xs mt-8">
