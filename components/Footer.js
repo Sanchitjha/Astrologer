@@ -57,7 +57,8 @@ export default function Footer() {
           {/* Social Icons — real brand colors */}
           <div className="flex gap-3 pt-2">
             {/* Facebook */}
-            <a href="#" aria-label="Facebook"
+            <a href="https://www.facebook.com/share/18o5wbJ9pQ/" aria-label="Facebook"
+               target="_blank" rel="noopener noreferrer"
                className="w-9 h-9 rounded-full flex items-center justify-center transition-transform hover:scale-110 shadow-md"
                style={{ background: '#1877F2' }}>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="white" aria-hidden="true">
@@ -65,7 +66,8 @@ export default function Footer() {
               </svg>
             </a>
             {/* Instagram */}
-            <a href="#" aria-label="Instagram"
+            <a href="https://www.instagram.com/astrologernearmee/" aria-label="Instagram"
+               target="_blank" rel="noopener noreferrer"
                className="w-9 h-9 rounded-full flex items-center justify-center transition-transform hover:scale-110 shadow-md"
                style={{ background: 'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)' }}>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="white" aria-hidden="true">
