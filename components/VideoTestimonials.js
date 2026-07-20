@@ -6,7 +6,7 @@ const videos = [
   { id: 'xGDybAVyLg8', icon: '🎬', title: 'Love & Relationship Success' },
   { id: 'zLoGns5uYwU', icon: '🎥', title: 'Career & Business Success' },
   { id: 'ODfXVu6LPx4', icon: '📹', title: 'Marriage & Family Guidance' },
-  { id: 'dSlvhrRfsfl', icon: '🎞️', title: 'Client Experience' },
+  { id: 'dSlvhrRfsfI', icon: '🎞️', title: 'Client Experience' },
 ];
 
 export default function VideoTestimonials() {
