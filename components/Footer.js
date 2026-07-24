@@ -16,6 +16,7 @@ const expertise = [
   { label: 'Get Your Love Back', href: '/love-problems' },
   { label: 'Gemstone Consultation', href: '/gemstones' },
   { label: 'Mala & Sacred Beads', href: '/mala' },
+  { label: 'Zodiac & Crystal Bracelets', href: '/bracelets' },
   { label: 'Dosh Problem Solution', href: '/services' },
 ];
 
