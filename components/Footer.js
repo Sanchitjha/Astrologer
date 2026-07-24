@@ -3,6 +3,8 @@ import Image from 'next/image';
 
 const quickLinks = [
   { label: 'Home', href: '/' },
+  { label: 'Astrology Services', href: '/astrology-services' },
+  { label: 'Pooja & Rituals', href: '/pooja' },
   { label: 'Blog', href: '/blog' },
   { label: 'Disclaimer', href: '/privacy-services' },
   { label: 'Privacy Policy & Terms', href: '/privacy-services' },
