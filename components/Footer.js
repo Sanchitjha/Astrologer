@@ -22,6 +22,7 @@ const expertise = [
   { label: 'Zodiac & Crystal Bracelets', href: '/bracelets' },
   { label: 'Vashikaran Specialist', href: '/vashikaran-services' },
   { label: 'Dosh Problem Solution', href: '/services' },
+  { label: 'Pooja & Spiritual Decor', href: '/spiritual-decor' },
 ];
 
 export default function Footer() {
