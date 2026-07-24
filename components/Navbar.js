@@ -9,6 +9,8 @@ import { Menu, X } from 'lucide-react';
 const links = [
   { label: 'HOME', href: '/' },
   { label: 'SERVICES', href: '/services' },
+  { label: 'YANTRAS', href: '/yantras' },
+  { label: 'GEMSTONES', href: '/gemstones' },
   { label: 'LOVE PROBLEMS', href: '/love-problems' },
   { label: 'PRIVACY SERVICES', href: '/privacy-services' },
   { label: 'POOJA', href: '/pooja' },
