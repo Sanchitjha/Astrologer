@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import PageHeader from '@/components/PageHeader';
 import ContactCTA from '@/components/ContactCTA';
 
@@ -27,6 +28,7 @@ const poojas = [
     title: 'Navgraha Puja',
     desc: 'A comprehensive ritual to balance all nine planets and attract their positive energies into your life.',
     duration: '3–4 hours',
+    slug: 'navgrah-pooja',
   },
   {
     icon: '🐍',
@@ -39,6 +41,7 @@ const poojas = [
     title: 'Mangal Dosh Pooja',
     desc: 'Special Manglik remedies and Puja to reduce the effects of Mangal Dosha for marriage compatibility.',
     duration: '2–3 hours',
+    slug: 'mangal-pooja',
   },
   {
     icon: '💰',
@@ -63,12 +66,48 @@ const poojas = [
     title: 'Satyanarayan Katha',
     desc: 'Auspicious Vishnu puja traditionally performed for home blessings, family harmony, and new beginnings.',
     duration: '3–4 hours',
+    slug: 'satyanarayan-pooja',
   },
   {
     icon: '🏠',
     title: 'Vastu Shanti Puja',
     desc: 'Purify and energize your home or office space to attract positive energies and remove Vastu doshas.',
     duration: '3–5 hours',
+  },
+  {
+    icon: '🐍',
+    title: 'Rahu Ketu Pooja',
+    desc: 'Powerful Vedic ritual to pacify Rahu and Ketu and bring positive change to career, relationships, and health.',
+    duration: '2–3 hours',
+    slug: 'rahu-ketu-pooja',
+  },
+  {
+    icon: '☀️',
+    title: 'Surya Pooja',
+    desc: 'Strengthen a weak Sun in your horoscope for renewed vitality, success, confidence, and recognition.',
+    duration: '1–2 hours',
+    slug: 'surya-pooja',
+  },
+  {
+    icon: '🙏',
+    title: 'Pitra Dosh Pooja',
+    desc: 'Honor your ancestors and restore balance and harmony to the family through traditional Vedic rites.',
+    duration: '3–4 hours',
+    slug: 'pitra-dosh-pooja',
+  },
+  {
+    icon: '🐘',
+    title: 'Ganesh Pooja',
+    desc: 'Remove obstacles and invite wealth and prosperity by worshipping Lord Ganesha before any important task.',
+    duration: '1–2 hours',
+    slug: 'ganesh-pooja',
+  },
+  {
+    icon: '🪔',
+    title: 'Shani Pooja',
+    desc: 'Appease Saturn to ease the effects of Shani Dasha — relief from delays, stress, and hardship.',
+    duration: '2–3 hours',
+    slug: 'shani-pooja',
   },
 ];
 
