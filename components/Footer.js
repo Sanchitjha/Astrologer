@@ -15,6 +15,7 @@ const expertise = [
   { label: 'Inter-caste Love Marriage', href: '/love-problems' },
   { label: 'Get Your Love Back', href: '/love-problems' },
   { label: 'Gemstone Consultation', href: '/gemstones' },
+  { label: 'Mala & Sacred Beads', href: '/mala' },
   { label: 'Dosh Problem Solution', href: '/services' },
 ];
 
