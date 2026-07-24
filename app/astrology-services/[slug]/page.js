@@ -1,19 +1,36 @@
-'use client';
-
-import { useState } from 'react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { generalServices } from '@/data/generalServices';
 import PageHeader from '@/components/PageHeader';
 import ContactCTA from '@/components/ContactCTA';
+import ServiceFAQ from '@/components/ServiceFAQ';
 
-export default function AstrologyServiceDetailPage({ params }) {
-  const s = generalServices.find((x) => x.slug === params.slug);
-  const [openFaq, setOpenFaq] = useState(null);
+export async function generateStaticParams() {
+  return generalServices.map((s) => ({ slug: s.slug }));
+}
 
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const s = generalServices.find((x) => x.slug === slug);
+  if (!s) return {};
+  return {
+    title: `${s.title} | Rohit Sharma`,
+    description: s.metaDesc,
+    keywords: [s.title.toLowerCase()],
+    openGraph: {
+      title: s.title,
+      description: s.metaDesc,
+      images: ['/logo.jpg'],
+    },
+  };
+}
+
+export default async function AstrologyServiceDetailPage({ params }) {
+  const { slug } = await params;
+  const s = generalServices.find((x) => x.slug === slug);
   if (!s) notFound();
 
-  const idx = generalServices.findIndex((x) => x.slug === params.slug);
+  const idx = generalServices.findIndex((x) => x.slug === slug);
   const related = [
     generalServices[(idx + 1) % generalServices.length],
     generalServices[(idx + 2) % generalServices.length],
@@ -63,30 +80,7 @@ export default function AstrologyServiceDetailPage({ params }) {
             </div>
           )}
 
-          {s.faqs && s.faqs.length > 0 && (
-            <div className="glass-card rounded-2xl p-8 space-y-3">
-              <h2 className="text-[#9E7016] font-bold text-lg mb-2" style={{ fontFamily: 'var(--font-cinzel)' }}>
-                Frequently Asked Questions
-              </h2>
-              <div className="space-y-3" role="list">
-                {s.faqs.map((f, i) => (
-                  <div key={f.q} className="border-b border-[#D4AF37]/10 pb-3 last:border-0 last:pb-0" role="listitem">
-                    <button
-                      onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                      className="w-full flex items-center justify-between gap-4 text-left"
-                      aria-expanded={openFaq === i}
-                    >
-                      <span className="text-[#2A1408]/85 font-medium text-sm">{f.q}</span>
-                      <span className={`text-[#C1102E] text-lg shrink-0 transition-transform duration-300 ${openFaq === i ? 'rotate-45' : ''}`}>+</span>
-                    </button>
-                    {openFaq === i && (
-                      <p className="text-[#2A1408]/55 text-sm leading-relaxed mt-2">{f.a}</p>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
+          <ServiceFAQ faqs={s.faqs} />
 
           {/* Contact CTA inline */}
           <div className="glass-card rounded-2xl p-8 text-center space-y-5">
