@@ -136,23 +136,37 @@ export default function PoojaPage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {poojas.map((p) => (
-              <div key={p.title} className="glass-card rounded-2xl p-7 flex flex-col gap-3 group">
-                <div className="flex items-start justify-between">
-                  <span className="text-4xl">{p.icon}</span>
-                  <span className="text-xs text-[#9E7016]/60 border border-[#D4AF37]/20 rounded-full
-                                   px-3 py-1 shrink-0"
-                        style={{ fontFamily: 'var(--font-cinzel)' }}>
-                    {p.duration}
-                  </span>
-                </div>
-                <h3 className="text-[#9E7016] font-bold"
-                    style={{ fontFamily: 'var(--font-cinzel)' }}>
-                  {p.title}
-                </h3>
-                <p className="text-[#2A1408]/55 text-sm leading-relaxed flex-1">{p.desc}</p>
-              </div>
-            ))}
+            {poojas.map((p) => {
+              const Wrapper = p.slug ? Link : 'div';
+              const wrapperProps = p.slug ? { href: `/pooja/${p.slug}` } : {};
+              return (
+                <Wrapper
+                  key={p.title}
+                  {...wrapperProps}
+                  className="glass-card rounded-2xl p-7 flex flex-col gap-3 group"
+                >
+                  <div className="flex items-start justify-between">
+                    <span className="text-4xl">{p.icon}</span>
+                    <span className="text-xs text-[#9E7016]/60 border border-[#D4AF37]/20 rounded-full
+                                     px-3 py-1 shrink-0"
+                          style={{ fontFamily: 'var(--font-cinzel)' }}>
+                      {p.duration}
+                    </span>
+                  </div>
+                  <h3 className="text-[#9E7016] font-bold"
+                      style={{ fontFamily: 'var(--font-cinzel)' }}>
+                    {p.title}
+                  </h3>
+                  <p className="text-[#2A1408]/55 text-sm leading-relaxed flex-1">{p.desc}</p>
+                  {p.slug && (
+                    <span className="inline-flex items-center gap-1 text-[#C1102E] text-xs font-bold mt-auto"
+                          style={{ fontFamily: 'var(--font-cinzel)' }}>
+                      READ MORE <span className="text-base">→</span>
+                    </span>
+                  )}
+                </Wrapper>
+              );
+            })}
           </div>
 
           {/* How to book */}
