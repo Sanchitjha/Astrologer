@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import PageHeader from '@/components/PageHeader';
 import LoveProblems from '@/components/LoveProblems';
 import ContactCTA from '@/components/ContactCTA';
@@ -22,31 +23,37 @@ export const metadata = {
 
 const solutions = [
   {
+    slug: 'lost-love-back',
     title: 'Lost Love Back',
     desc: 'Reunite with your lost love through powerful Vedic remedies, mantra japa, and planetary analysis.',
     icon: '💔➡️❤️',
   },
   {
+    slug: 'one-sided-love',
     title: 'One-Sided Love',
     desc: 'Transform unrequited feelings with compassionate spiritual guidance and astrological remedies.',
     icon: '💭',
   },
   {
+    slug: 'family-opposition',
     title: 'Family Opposition',
     desc: 'Bridge family disagreements and gain acceptance for your relationship through respectful astrological solutions.',
     icon: '🏠',
   },
   {
+    slug: 'love-marriage',
     title: 'Love Marriage',
     desc: 'Expert guidance for love marriages — Kundli matching, auspicious timing (muhurat), and family harmony.',
     icon: '💍',
   },
   {
+    slug: 'breakup-recovery',
     title: 'Breakup Recovery',
     desc: 'Heal emotional wounds and rebuild trust in relationships with spiritual and astrological support.',
     icon: '🌱',
   },
   {
+    slug: 'inter-caste-marriage',
     title: 'Inter-Caste Marriage',
     desc: 'Specialized solutions for inter-caste and inter-religion couples seeking family approval and harmony.',
     icon: '🌍',
@@ -79,14 +86,22 @@ export default function LoveProblemsPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {solutions.map((s) => (
-              <div key={s.title} className="glass-card rounded-2xl p-7 group">
+              <Link
+                key={s.slug}
+                href={`/love-problems/${s.slug}`}
+                className="glass-card rounded-2xl p-7 group flex flex-col"
+              >
                 <div className="text-4xl mb-4">{s.icon}</div>
                 <h3 className="text-[#9E7016] font-bold text-base mb-3"
                     style={{ fontFamily: 'var(--font-cinzel)' }}>
                   {s.title}
                 </h3>
-                <p className="text-[#2A1408]/55 text-sm leading-relaxed">{s.desc}</p>
-              </div>
+                <p className="text-[#2A1408]/55 text-sm leading-relaxed flex-1">{s.desc}</p>
+                <span className="inline-flex items-center gap-1 text-[#C1102E] text-xs font-bold mt-4"
+                      style={{ fontFamily: 'var(--font-cinzel)' }}>
+                  READ MORE <span className="text-base">→</span>
+                </span>
+              </Link>
             ))}
           </div>
         </div>

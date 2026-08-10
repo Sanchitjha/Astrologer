@@ -3,6 +3,7 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import FloatingCallButton from '@/components/FloatingCallButton';
 
 // Self-hosted variable fonts — no network dependency, so pages always load fast & offline.
 const cinzel = localFont({
@@ -128,6 +129,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <FloatingWhatsApp />
+        <FloatingCallButton />
       </body>
     </html>
   );
