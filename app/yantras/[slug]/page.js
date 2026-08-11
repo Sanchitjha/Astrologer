@@ -48,17 +48,19 @@ export default function YantraDetailPage({ params }) {
             {/* Product image */}
             <div
               className="relative flex items-center justify-center h-56 md:h-72 rounded-2xl overflow-hidden"
-              style={{ background: photo ? undefined : 'linear-gradient(135deg, rgba(212,175,55,0.08), rgba(204,0,0,0.06))' }}
+              style={{ background: 'linear-gradient(135deg, rgba(212,175,55,0.08), rgba(204,0,0,0.06))' }}
             >
               {photo ? (
-                <Image
-                  src={photo}
-                  alt={yantra.name}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover"
-                  priority
-                />
+                <div className="absolute inset-5">
+                  <Image
+                    src={photo}
+                    alt={yantra.name}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-contain"
+                    priority
+                  />
+                </div>
               ) : (
                 <span className="text-8xl md:text-9xl text-[#9E7016]/50 float-anim select-none"
                       aria-hidden="true" style={{ fontFamily: 'var(--font-devanagari)' }}>

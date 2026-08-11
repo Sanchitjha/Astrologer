@@ -5,17 +5,19 @@ export default function DecorCard({ slug, title, icon, intro, photo }) {
   return (
     <article className="glass-card rounded-2xl overflow-hidden flex flex-col group">
       <div
-        className="h-36 flex items-center justify-center relative border-b border-[#D4AF37]/10"
-        style={{ background: photo ? undefined : 'linear-gradient(135deg, rgba(212,175,55,0.06) 0%, rgba(204,0,0,0.04) 100%)' }}
+        className="aspect-square flex items-center justify-center relative border-b border-[#D4AF37]/10"
+        style={{ background: 'linear-gradient(135deg, rgba(212,175,55,0.06) 0%, rgba(204,0,0,0.04) 100%)' }}
       >
         {photo ? (
-          <Image
-            src={photo}
-            alt={title}
-            fill
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-            className="object-cover"
-          />
+          <div className="absolute inset-3">
+            <Image
+              src={photo}
+              alt={title}
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+              className="object-contain"
+            />
+          </div>
         ) : (
           <span
             className="text-5xl text-[#9E7016]/40 group-hover:text-[#9E7016]/70 transition-colors duration-500 select-none float-anim"

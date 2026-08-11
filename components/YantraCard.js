@@ -19,8 +19,8 @@ export default function YantraCard({ id, slug, name, originalPrice, salePrice, d
     <article className="glass-card rounded-2xl overflow-hidden flex flex-col group">
       {/* Yantra visual */}
       <div
-        className="h-36 flex items-center justify-center relative border-b border-[#D4AF37]/10"
-        style={{ background: photo ? undefined : 'linear-gradient(135deg, rgba(212,175,55,0.06) 0%, rgba(204,0,0,0.04) 100%)' }}
+        className="aspect-square flex items-center justify-center relative border-b border-[#D4AF37]/10"
+        style={{ background: 'linear-gradient(135deg, rgba(212,175,55,0.06) 0%, rgba(204,0,0,0.04) 100%)' }}
       >
         {discountPercent > 0 && (
           <span className="absolute top-2.5 right-2.5 bg-[#C1102E] text-white text-[10px] font-black px-2 py-0.5 rounded-full z-10 shadow">
@@ -28,13 +28,15 @@ export default function YantraCard({ id, slug, name, originalPrice, salePrice, d
           </span>
         )}
         {photo ? (
-          <Image
-            src={photo}
-            alt={name}
-            fill
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-            className="object-cover"
-          />
+          <div className="absolute inset-3">
+            <Image
+              src={photo}
+              alt={name}
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+              className="object-contain"
+            />
+          </div>
         ) : (
           <span
             className="text-6xl text-[#9E7016]/40 group-hover:text-[#9E7016]/70 transition-colors duration-500 select-none float-anim"
