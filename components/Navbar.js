@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { vashikaranServices } from '@/data/vashikaranServices';
+import { generalServices } from '@/data/generalServices';
 import GetAdviceModal from './GetAdviceModal';
 
 const privacyDropdown = [
@@ -13,9 +14,14 @@ const privacyDropdown = [
   { label: 'View All Vashikaran Services →', href: '/vashikaran-services' },
 ];
 
+const servicesDropdown = [
+  ...generalServices.map((s) => ({ label: s.title.split('—')[0].trim(), href: `/astrology-services/${s.slug}` })),
+  { label: 'View All Services →', href: '/astrology-services' },
+];
+
 const links = [
   { label: 'HOME', href: '/' },
-  { label: 'SERVICES', href: '/services' },
+  { label: 'SERVICES', href: '/astrology-services', dropdown: servicesDropdown },
   { label: 'YANTRAS', href: '/yantras' },
   { label: 'GEMSTONES', href: '/gemstones' },
   { label: 'LOVE PROBLEMS', href: '/love-problems' },

@@ -8,6 +8,8 @@ export const generalServices = [
     sectionHeading: 'What Your Janam Kundali Can Reveal',
     sectionBody: 'Creating an accurate Janam Kundali by date of birth with precise time matching is essential to get reliable results. Many parents consult expert astrologers to prepare an accurate Janam Kundali for their child right after birth. A Janam Kundali is also referred to as Janampatri or Jathakam in some regional traditions.',
     areas: ['Educational growth and learning path', 'Marriage and relationship life', 'Health patterns and concerns', 'Presence of doshas such as Manglik or other planetary afflictions', 'Career growth and professional direction', 'Child-related concerns and family matters'],
+    formButtonLabel: 'Get Quick Response',
+    formFields: ['dob', 'tob', 'pob'],
     faqs: [
       { q: 'What is a Janam Kundali?', a: 'A Janam Kundali, also known as a Kundli or Birth Chart, is a detailed astrological chart prepared using your date of birth, exact time, and birthplace. It maps the position of planets, constellations, and zodiac signs at the moment you were born.' },
       { q: 'Is Janam Kundali prediction 100% accurate?', a: 'A Janam Kundali can be highly accurate when your birth details are correct. However, no prediction system can be entirely certain, since life outcomes also depend on personal actions, free will, and circumstances.' },
@@ -23,6 +25,8 @@ export const generalServices = [
     sectionHeading: 'Why Choose Us for Horoscope Matching',
     sectionBody: "You don't need any technical or scientific knowledge to understand our horoscope readings. Horoscope matching for marriage is one of the most important parts of Vedic astrology — widely practiced before marriage, especially in Hindu traditions, where it is known as Kundli Milap or Gun Milap, helping families assess compatibility before taking the next step.",
     areas: ['Reliable online horoscope matching', 'Daily and monthly horoscope readings based on birth details', 'Insight for education, marriage, and career decisions'],
+    formButtonLabel: 'Contact Us Now',
+    formFields: ['dob'],
     faqs: [],
   },
   {
@@ -34,6 +38,8 @@ export const generalServices = [
     sectionHeading: 'Importance of Palm Reading Astrology',
     sectionBody: 'A skilled palm reader studies the mounts and shapes of the hand carefully while reading palmistry lines. Palm reading online is a great option for those who may not have accurate birth details to rely on. This study is based on analyzing the four primary palmistry lines — the fate line, head line, life line, and heart line — along with the mounts and finger prints.',
     areas: ['Career and education guidance', 'Marriage and love life insight', 'General life path and decision-making support'],
+    formButtonLabel: 'Contact Us Now',
+    formFields: [],
     faqs: [],
   },
   {
@@ -51,6 +57,8 @@ export const generalServices = [
       'East-facing homes carry both positive and cautionary associations',
       'West-facing homes are often associated with good fortune and success',
     ],
+    formButtonLabel: 'Contact Us Now',
+    formFields: [],
     faqs: [],
   },
   {
@@ -62,6 +70,8 @@ export const generalServices = [
     sectionHeading: 'Why Choose Rohit Sharma?',
     sectionBody: "If a child gift seems delayed even after years of marriage, many families consult baby horoscope and child Kundli analysis. Several factors are traditionally studied — including Pitra Dosh, planetary positions at the time of the parents' birth, and other chart-based patterns. A child horoscope reading is used as a tool for reflection and guidance, helping families understand potential factors at play alongside their medical journey.",
     areas: ['Baby horoscope and child Kundli analysis', 'Pitra Dosh and planetary pattern review', 'Traditional remedies alongside medical guidance'],
+    formButtonLabel: 'Contact Us Now',
+    formFields: [],
     faqs: [],
   },
   {
@@ -73,6 +83,8 @@ export const generalServices = [
     sectionHeading: 'Is Trusting an Astrologer a Good Idea?',
     sectionBody: 'Success and setbacks in business are shaped by many factors — but having guidance before making a big move can help you anticipate challenges early. A strong placement of the 7th house lord is traditionally seen as a favorable sign for business success — and where it\'s weaker, astrology offers remedies to help balance it.',
     areas: ['Kundli and palm review for business potential', 'Guidance before taking the leap into a new venture', 'Remedies to balance a weaker 7th house placement'],
+    formButtonLabel: 'Contact Us Now',
+    formFields: [],
     faqs: [],
   },
   {
@@ -84,6 +96,8 @@ export const generalServices = [
     sectionHeading: 'Facts You Should Know About Career Astrology',
     sectionBody: "According to traditional astrological belief, the placement of planets in one's Kundli is said to indicate the career paths an individual may naturally be drawn toward. This doesn't mean a person is destined to follow that path — rather, it suggests which fields may align well with their interests and strengths. Astrology, in this tradition, is treated as a guide rather than a fixed determinant.",
     areas: ['Insight into fields of natural interest or aptitude', 'Guidance for job changes and financial growth concerns', 'Perspective on business, private employment, or government service'],
+    formButtonLabel: 'Contact Us Now',
+    formFields: [],
     faqs: [],
   },
   {
@@ -96,6 +110,8 @@ export const generalServices = [
     sectionBody: 'In Hindu tradition, important activities and ceremonies — including vehicle purchases — are carried out during a Shubh Muhurat. Sarvarth Siddhi Yoga, a recognized Shubh Muhurat, is traditionally considered favorable for activities such as vehicle purchases, opening a new office, Griha Pravesh, starting a new job, business deals, and signing contracts. Rahu Kaal, by contrast, is considered an inauspicious period best avoided for such purchases.',
     areas: ['Personalised muhurat guidance based on Panchang Shuddhi', 'Best time of day for the purchase', 'Guidance on avoiding Rahu Kaal'],
     note: 'Exact muhurat dates and times change every year and require real Panchang calculations — contact Rohit Sharmaji directly for the current auspicious dates for your vehicle purchase.',
+    formButtonLabel: 'Contact Us Now',
+    formFields: [],
     faqs: [],
   },
   {
@@ -116,6 +132,42 @@ export const generalServices = [
       'Bhakoot Dosha — based on Moon sign distance between partners',
       'Guru Chandal Dosha — Jupiter combined with Rahu or Ketu',
     ],
+    doshaDetails: [
+      {
+        name: 'Kaal Sarp Dosh',
+        desc: 'When all nine planets in a horoscope fall between Rahu and Ketu, it is known as Kaal Sarp Dosh — considered one of the more challenging doshas in Vedic astrology. While most effects are seen as difficult, some positions can bring favorable results too. A dedicated puja is typically recommended along with personalized guidance.',
+      },
+      {
+        name: 'Kuja Dosha (Mangal Dosh)',
+        desc: 'When Mars is placed in the 2nd, 4th, 7th, 8th, or 12th house from the ascendant, Moon, or Venus, it is referred to as Kuja Dosh — also known as Mangal Dosh, Manglik Dosh, or Bhom Dosh. This dosha is traditionally associated with challenges in married life if not addressed with the right remedies in time.',
+      },
+      {
+        name: 'Pitra Dosh',
+        desc: '"Pitra" refers to one\'s ancestors. In Vedic astrology, the Sun represents the father figure, and when positioned in the 9th house under malefic influence from Rahu, a person may experience Pitra Dosh — traditionally seen as a karmic debt linked to one\'s ancestors.',
+      },
+      {
+        name: 'Nadi Dosha',
+        desc: 'Nadi Dosha is considered a serious factor in horoscope matching for marriage. Among the 36 compatibility points used in matchmaking (Ashtakoot), Nadi carries 8 points and is considered essential for marital harmony.',
+      },
+      {
+        name: 'Rajju Dosha',
+        desc: 'Rajju Dosha is considered one of the more significant doshas affecting marital compatibility, particularly Madhyama Rajju Dosh. Marriage is generally not recommended when birth stars (Janam Nakshatras) of both partners fall into Vedha with each other, or belong to the same Rajju category.',
+      },
+      {
+        name: 'Rahu Dosha',
+        desc: 'Rahu, though not physically visible like other planets, holds both positive and negative influence in Vedic astrology. When positioned in the 6th, 8th, or 12th house of a Kundli, it may bring a more difficult period — particularly during Rahu Mahadasha.',
+      },
+      {
+        name: 'Bhakoot Dosha',
+        desc: 'Bhakoot Dosha can occur in three forms based on the distance between the Moon signs of the prospective bride and groom — known as Dwi-Dwadash Dosha, Navam-Pancham Dosha, or Shadashtak Dosha, depending on the specific positioning.',
+      },
+      {
+        name: 'Guru Chandal Dosha',
+        desc: "Guru Chandal Dosha forms when Jupiter combines with Rahu or Ketu in a natal chart. Since Jupiter represents wisdom and growth, this combination is often seen as challenging — though it can also bring favorable results in certain chart positions. Common effects include career and education-related challenges, job instability, financial difficulties, and friction with father or children. Remedies include puja to seek Jupiter's blessings, worshipping Lord Ganesha and Lord Vishnu, and Nirvana puja for Chandal Yoga.",
+      },
+    ],
+    formButtonLabel: 'Contact Us Now',
+    formFields: [],
     faqs: [],
   },
 ];

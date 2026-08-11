@@ -4,6 +4,7 @@ import { generalServices } from '@/data/generalServices';
 import PageHeader from '@/components/PageHeader';
 import ContactCTA from '@/components/ContactCTA';
 import ServiceFAQ from '@/components/ServiceFAQ';
+import QuickResponseForm from '@/components/QuickResponseForm';
 
 export async function generateStaticParams() {
   return generalServices.map((s) => ({ slug: s.slug }));
@@ -52,6 +53,12 @@ export default async function AstrologyServiceDetailPage({ params }) {
             <p className="text-[#2A1408]/65 text-sm leading-relaxed text-left">{s.intro}</p>
           </div>
 
+          <QuickResponseForm
+            toolName={s.title.split('—')[0].trim()}
+            buttonLabel={s.formButtonLabel || 'Contact Us Now'}
+            fields={s.formFields || []}
+          />
+
           <div className="glass-card rounded-2xl p-8 space-y-3">
             <h2 className="text-[#9E7016] font-bold text-lg" style={{ fontFamily: 'var(--font-cinzel)' }}>
               {s.sectionHeading}
@@ -59,18 +66,34 @@ export default async function AstrologyServiceDetailPage({ params }) {
             <p className="text-[#2A1408]/60 text-sm leading-relaxed">{s.sectionBody}</p>
           </div>
 
-          <div className="glass-card rounded-2xl p-8 space-y-4">
-            <h2 className="text-[#9E7016] font-bold text-lg" style={{ fontFamily: 'var(--font-cinzel)' }}>
-              What We Cover
-            </h2>
-            <ul className="space-y-2">
-              {s.areas.map((a) => (
-                <li key={a} className="flex items-start gap-2 text-sm text-[#2A1408]/60">
-                  <span className="text-[#C1102E] text-xs mt-1">✦</span> {a}
-                </li>
-              ))}
-            </ul>
-          </div>
+          {s.doshaDetails ? (
+            <div className="glass-card rounded-2xl p-8 space-y-5">
+              <h2 className="text-[#9E7016] font-bold text-lg" style={{ fontFamily: 'var(--font-cinzel)' }}>
+                Types of Dosha in Astrology
+              </h2>
+              <div className="space-y-4">
+                {s.doshaDetails.map((d) => (
+                  <div key={d.name} className="border-b border-[#D4AF37]/10 pb-4 last:border-0 last:pb-0">
+                    <p className="text-[#2A1408] font-semibold text-sm mb-1.5">{d.name}</p>
+                    <p className="text-[#2A1408]/60 text-sm leading-relaxed">{d.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <div className="glass-card rounded-2xl p-8 space-y-4">
+              <h2 className="text-[#9E7016] font-bold text-lg" style={{ fontFamily: 'var(--font-cinzel)' }}>
+                What We Cover
+              </h2>
+              <ul className="space-y-2">
+                {s.areas.map((a) => (
+                  <li key={a} className="flex items-start gap-2 text-sm text-[#2A1408]/60">
+                    <span className="text-[#C1102E] text-xs mt-1">✦</span> {a}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           {s.note && (
             <div className="glass-card rounded-2xl p-6 bg-[#D4AF37]/5">
